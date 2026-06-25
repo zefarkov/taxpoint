@@ -1,0 +1,50 @@
+import { ButtonLink } from "@/components/ButtonLink";
+import { telegramUrl } from "@/data/site";
+
+type PricingCardProps = {
+  plan: {
+    name: string;
+    price: string;
+    period: string;
+    description: string;
+    recommended?: boolean;
+    features: string[];
+  };
+};
+
+export function PricingCard({ plan }: PricingCardProps) {
+  return (
+    <article
+      className={`relative flex h-full flex-col rounded-lg border bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-soft ${
+        plan.recommended ? "border-navy-800 ring-2 ring-navy-100" : "border-slate-200"
+      }`}
+    >
+      {plan.recommended ? (
+        <span className="absolute right-5 top-5 rounded-md bg-navy-900 px-3 py-1 text-xs font-semibold text-white">
+          Tavsiya etiladi
+        </span>
+      ) : null}
+      <div className="border-b border-slate-200 pb-5">
+        <h3 className="text-2xl font-semibold text-navy-900">{plan.name}</h3>
+        <p className="mt-3 min-h-12 text-sm leading-6 text-slate-600">{plan.description}</p>
+      </div>
+      <div className="mt-6 min-h-20">
+        <span className="block text-3xl font-semibold leading-tight text-navy-900">{plan.price}</span>
+        <span className="ml-1 text-sm font-medium text-slate-500">{plan.period}</span>
+      </div>
+      <ul className="mt-2 grid gap-3 text-sm leading-6 text-slate-700">
+        {plan.features.map((feature) => (
+          <li key={feature} className="flex gap-3">
+            <span className="mt-2 flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-navy-50 text-[11px] font-semibold text-success-600">
+              ✓
+            </span>
+            <span>{feature}</span>
+          </li>
+        ))}
+      </ul>
+      <ButtonLink href={telegramUrl} variant={plan.recommended ? "primary" : "outline"} className="mt-8 w-full">
+        Tarif bo‘yicha maslahat olish
+      </ButtonLink>
+    </article>
+  );
+}
