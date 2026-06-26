@@ -31,7 +31,7 @@ Next.js is configured with `output: "export"`, so the production files are writt
 
 ## Telegram lead forms
 
-All main CTA buttons open a short lead form. The static frontend sends lead data to an ENDPOINT, and the Worker sends the Telegram notification securely.
+All main CTA buttons open a short lead form. The static frontend sends lead data to an ENDPOINT, and the ENDPOINT sends the Telegram notification securely.
 
 Frontend environment variable:
 
@@ -63,11 +63,11 @@ This project does not use API routes, server actions, or server-side rendering r
 
 Current contact values:
 
-- Phone: ``, ``, ``
-- Telegram link: ``
-- Address: ``
-- Google Maps: ``
-- Yandex Maps: ``
+- Phone: `number`, `number`, `number`
+- Telegram link: `tg`
+- Address: `address`
+- Google Maps: `link`
+- Yandex Maps: `link`
 - Production domain in `src/app/layout.tsx`, `public/sitemap.xml`, and `public/robots.txt`
 
 ## Client logos
