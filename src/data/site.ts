@@ -167,8 +167,7 @@ export const trustMetrics = [
 ];
 
 export const clientCategories = [
-  "Ulgurji savdo",
-  "Chakana savdo",
+  "Ulgurji va chakana savdo",
   "Xizmat ko'rsatish",
   "Ishlab chiqarish",
   "Fermer xo'jaligi",
