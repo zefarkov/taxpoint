@@ -4,49 +4,41 @@ type LeadPayload = {
   phone: string;
 };
 
-type TelegramResponse = {
+type LeadResponse = {
   ok: boolean;
-  description?: string;
+  error?: string;
 };
 
 export async function sendTelegramLead({ context, name, phone }: LeadPayload) {
-  const token = process.env.NEXT_PUBLIC_TELEGRAM_BOT_TOKEN;
-  const chatId = process.env.NEXT_PUBLIC_TELEGRAM_CHAT_ID;
+  const endpoint = process.env.NEXT_PUBLIC_LEAD_ENDPOINT;
 
-  if (!token || !chatId) {
-    const message =
-      "Telegram bot token yoki chat ID topilmadi. NEXT_PUBLIC_TELEGRAM_BOT_TOKEN va NEXT_PUBLIC_TELEGRAM_CHAT_ID ni sozlang.";
+  if (!endpoint) {
+    const message = "NEXT_PUBLIC_LEAD_ENDPOINT sozlanmagan.";
 
     if (process.env.NODE_ENV === "development") {
       console.warn(message, { context, name, phone });
       return { ok: true };
     }
 
-    console.warn(message);
-    throw new Error("Telegram sozlamalari topilmadi.");
+    throw new Error(message);
   }
 
-  const text = `Yangi so'rov:
-${context}
-
-Ism: ${name}
-Telefon: ${phone}`;
-
-  const response = await fetch(`https://api.telegram.org/bot${token}/sendMessage`, {
+  const response = await fetch(endpoint, {
     method: "POST",
     headers: {
       "Content-Type": "application/json"
     },
     body: JSON.stringify({
-      chat_id: chatId,
-      text
+      context,
+      name,
+      phone
     })
   });
 
-  const data = (await response.json().catch(() => null)) as TelegramResponse | null;
+  const data = (await response.json().catch(() => null)) as LeadResponse | null;
 
   if (!response.ok || !data?.ok) {
-    throw new Error(data?.description || "Telegram so'rovini yuborib bo'lmadi.");
+    throw new Error(data?.error || "Lead so'rovini yuborib bo'lmadi.");
   }
 
   return data;

@@ -31,14 +31,23 @@ Next.js is configured with `output: "export"`, so the production files are writt
 
 ## Telegram lead forms
 
-All main CTA buttons open a short lead form and send the request to Telegram from the client side. Configure these environment variables before production builds:
+All main CTA buttons open a short lead form. The static frontend sends lead data to a Cloudflare Worker, and the Worker sends the Telegram notification securely.
+
+Frontend environment variable:
 
 ```bash
-NEXT_PUBLIC_TELEGRAM_BOT_TOKEN=your_bot_token
-NEXT_PUBLIC_TELEGRAM_CHAT_ID=your_chat_id
+NEXT_PUBLIC_LEAD_ENDPOINT=https://YOUR-WORKER.YOUR-SUBDOMAIN.workers.dev
 ```
 
-No bot token is hardcoded in the project. If these values are missing in production, the form shows a user-friendly error instead of sending.
+Do not use `NEXT_PUBLIC_TELEGRAM_BOT_TOKEN` or expose Telegram credentials in the frontend. The Worker keeps these values as secrets:
+
+```bash
+TELEGRAM_BOT_TOKEN
+TELEGRAM_CHAT_ID
+ALLOWED_ORIGIN=https://taxpoint.uz
+```
+
+Worker source and setup instructions are in `cloudflare-worker/`.
 
 ## Deploy through GitHub Pages
 
