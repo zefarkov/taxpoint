@@ -24,17 +24,17 @@ export function Hero() {
             YATT va MCHJ ro‘yxatdan o‘tkazish hamda elektron tizimlarni sozlash
             xizmatlarini taqdim etadi.
           </p>
-          <div className="mt-8 flex flex-col gap-3 sm:flex-row">
-            <LeadFormModal context="KONSULTATSIYA" variant="secondary" className="sm:min-w-48">
+          <div className="mt-8 grid gap-3 sm:flex sm:flex-wrap">
+            <LeadFormModal context="KONSULTATSIYA" variant="secondary" className="w-full sm:w-auto sm:min-w-48">
               Konsultatsiya olish
             </LeadFormModal>
-            <ButtonLink href="#tariflar" variant="outline" className="sm:min-w-44">
+            <ButtonLink href="#tariflar" variant="outline" className="w-full sm:w-auto sm:min-w-44">
               Tariflarni ko‘rish
             </ButtonLink>
           </div>
-          <div className="mt-3 flex flex-wrap gap-2">
-            <TelegramButton label="Telegram" className="min-h-10 px-4 py-2" />
-            <PhoneModal className="min-h-10 px-4 py-2" />
+          <div className="mt-3 grid grid-cols-2 gap-3 sm:flex sm:flex-wrap sm:gap-2">
+            <TelegramButton label="Telegram" className="min-h-11 w-full px-3 py-2 sm:min-h-10 sm:w-auto sm:px-4" />
+            <PhoneModal className="min-h-11 w-full px-3 py-2 sm:min-h-10 sm:w-auto sm:px-4" />
           </div>
           <div className="mt-10 grid gap-3 sm:grid-cols-3">
             {trustPoints.map((point) => (
@@ -62,7 +62,7 @@ export function Hero() {
           </div>
           <div className="mt-6 grid grid-cols-2 gap-3 border-t border-navy-100 pt-6">
             <div>
-              <p className="text-2xl font-extrabold text-navy-900">4 xil</p>
+              <p className="text-2xl font-extrabold text-navy-900">4</p>
               <p className="mt-1 text-xs font-medium text-slate-500">oylik tarif</p>
             </div>
             <div>
