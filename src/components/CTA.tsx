@@ -15,7 +15,7 @@ export function CTA() {
           </p>
         </div>
         <div className="flex w-full flex-col gap-3 sm:w-auto sm:flex-row">
-          <ButtonLink href={telegramUrl}>Telegram orqali yozish</ButtonLink>
+          <ButtonLink href={telegramUrl}>Telegramda maslahat olish</ButtonLink>
           <ButtonLink href="#tariflar" variant="outline" className="border-white/30 bg-white text-navy-900 hover:bg-navy-50">
             Tariflarni ko‘rish
           </ButtonLink>

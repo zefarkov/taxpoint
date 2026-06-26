@@ -1,4 +1,6 @@
-export const telegramUrl = "https://t.me/taxpoint";
+export const phoneNumber = "+998930453736";
+export const telegramUrl = "https://t.me/+998930453736";
+export const telegramLabel = "Telegram orqali yozish";
 
 export const navItems = [
   { label: "Bosh sahifa", href: "/#bosh-sahifa" },
@@ -147,8 +149,34 @@ export const faqs = [
   {
     question: "Telegram orqali murojaat qilish mumkinmi?",
     answer:
-      "Ha. Saytdagi Telegram tugmalari orqali @taxpoint manziliga yozishingiz mumkin."
+      "Ha. Saytdagi Telegram tugmalari orqali mutaxassis bilan bevosita bog‘lanishingiz mumkin."
   }
+];
+
+export const trustMetrics = [
+  { value: "50+", label: "mijoz" },
+  { value: "300+", label: "topshirilgan hisobot" },
+  { value: "5+", label: "yil tajriba" },
+  { value: "100+", label: "ro‘yxatdan o‘tgan biznes" }
+];
+
+export const clientLogoPlaceholders = [
+  "Savdo",
+  "Xizmat",
+  "Import",
+  "Qurilish",
+  "Startap",
+  "Eksport",
+  "Retail",
+  "Servis"
+];
+
+export const clientCategories = [
+  "Savdo kompaniyalari",
+  "Xizmat ko‘rsatish bizneslari",
+  "Import va eksport kompaniyalari",
+  "Qurilish kompaniyalari",
+  "Startap va yangi bizneslar"
 ];
 
 export const seoServices = [

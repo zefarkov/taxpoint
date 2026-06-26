@@ -71,7 +71,7 @@ export default async function ServicePage({ params }: PageProps) {
               </ul>
             </div>
             <div className="mt-10 flex flex-col gap-3 sm:flex-row">
-              <ButtonLink href={telegramUrl}>Telegram orqali bog‘lanish</ButtonLink>
+              <ButtonLink href={telegramUrl}>Telegramda maslahat olish</ButtonLink>
               <ButtonLink href="/#tariflar" variant="outline">
                 Tariflarni ko‘rish
               </ButtonLink>

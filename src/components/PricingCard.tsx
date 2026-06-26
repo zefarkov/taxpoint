@@ -20,8 +20,8 @@ export function PricingCard({ plan }: PricingCardProps) {
       }`}
     >
       {plan.recommended ? (
-        <span className="absolute right-5 top-5 rounded-md bg-navy-900 px-3 py-1 text-xs font-semibold text-white">
-          Tavsiya etiladi
+        <span className="absolute right-5 top-5 rounded-md bg-success-500 px-3 py-1 text-xs font-semibold text-white shadow-sm">
+          Eng ko‘p tanlanadi
         </span>
       ) : null}
       <div className="border-b border-slate-200 pb-5">
@@ -43,7 +43,7 @@ export function PricingCard({ plan }: PricingCardProps) {
         ))}
       </ul>
       <ButtonLink href={telegramUrl} variant={plan.recommended ? "primary" : "outline"} className="mt-8 w-full">
-        Tarif bo‘yicha maslahat olish
+        Mutaxassis bilan gaplashish
       </ButtonLink>
     </article>
   );

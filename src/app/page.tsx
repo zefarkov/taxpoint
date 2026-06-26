@@ -1,4 +1,5 @@
 import { CTA } from "@/components/CTA";
+import { ClientsSection } from "@/components/ClientsSection";
 import { FAQ } from "@/components/FAQ";
 import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";
@@ -6,6 +7,7 @@ import { Hero } from "@/components/Hero";
 import { PricingCard } from "@/components/PricingCard";
 import { SectionHeading } from "@/components/SectionHeading";
 import { ServiceCategory } from "@/components/ServiceCategory";
+import { TrustMetrics } from "@/components/TrustMetrics";
 import { faqs, pricingPlans, serviceCategories, telegramUrl } from "@/data/site";
 import { ButtonLink } from "@/components/ButtonLink";
 
@@ -39,6 +41,8 @@ export default function Home() {
       <Header />
       <main>
         <Hero />
+        <ClientsSection />
+        <TrustMetrics />
 
         <section className="section-padding bg-slate-50">
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
@@ -64,7 +68,7 @@ export default function Home() {
             <SectionHeading
               eyebrow="Tariflar"
               title="Buxgalterlik hisobini yuritish"
-              description="Tariflar DOCX fayldagi ma’lumotlar asosida tuzildi. Korxona hajmi, operatsiyalar soni va soliq rejimiga qarab mos xizmat tanlanadi."
+              description="Korxona hajmi, operatsiyalar soni va soliq rejimiga qarab mos tarif tanlanadi. Mutaxassis holatingizni ko‘rib, eng maqbul yechimni tavsiya qiladi."
               align="center"
             />
             <div className="mt-12 grid gap-6 md:grid-cols-2 xl:grid-cols-4">
@@ -119,7 +123,7 @@ export default function Home() {
             </div>
             <div className="mt-10 text-center">
               <ButtonLink href={telegramUrl}>
-                Biznesni ro‘yxatdan o‘tkazish bo‘yicha bog‘lanish
+                Ro‘yxatdan o‘tkazish bo‘yicha maslahat olish
               </ButtonLink>
             </div>
           </div>

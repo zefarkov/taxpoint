@@ -27,7 +27,7 @@ npm install
 npm run build
 ```
 
-Next.js is configured with `output: "export"`, so the production files are generated in `/out`.
+Next.js is configured with `output: "export"`, so the production files are written to `/out`.
 
 ## Deploy through GitHub Pages
 
@@ -37,23 +37,14 @@ Next.js is configured with `output: "export"`, so the production files are gener
 4. Push to the `main` branch.
 5. The workflow in `.github/workflows/deploy.yml` will run `npm install`, `npm run build`, upload `/out`, and deploy it to GitHub Pages.
 
-This project does not use API routes, server actions, or server-side rendering requirements. All pages are statically generated, including the service routes under `/xizmatlar/...`.
+This project does not use API routes, server actions, or server-side rendering requirements. The homepage and service routes under `/xizmatlar/...` are static.
 
-## Content source
+## Contact details
 
-The tariffs and service lists are based on the attached `TAXOINT xizmatlar.docx` file:
+Current contact values:
 
-- Start: 1 500 000 so‘m / oy
-- Standard: 2 000 000 so‘m / oy
-- Business: 3 500 000 so‘m / oy
-- Pro: 6 000 000 so‘m / oy
-
-## Contact placeholders to replace
-
-Update these values before launch:
-
-- Phone: `+998 XX XXX XX XX`
-- Telegram username and link: `@taxpoint`, `https://t.me/taxpoint`
+- Phone: `+998930453736`
+- Telegram link: `https://t.me/+998930453736`
 - Address: `Toshkent, O‘zbekiston`
 - Production domain in `src/app/layout.tsx`, `public/sitemap.xml`, and `public/robots.txt`
 
