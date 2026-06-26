@@ -6,7 +6,7 @@ export const phoneNumbers = [
 export const telegramUrl = "https://t.me/+998930453736";
 export const telegramLabel = "Telegram";
 export const address = "Farg'ona shahar, Mustaqillik ko'chasi 193-uy";
-export const googleMapsUrl = "https://maps.app.goo.gl/WSjvR8mqZwDfj9t16";
+export const googleMapsUrl = "https://maps.app.goo.gl/HaSTYUr6S11YeiVq5";
 export const yandexMapsUrl = "https://yandex.uz/maps/-/CTQpuB11";
 
 export const navItems = [
@@ -167,11 +167,11 @@ export const trustMetrics = [
 ];
 
 export const clientCategories = [
-  "Ulgurji va chakana savdo",
-  "Xizmat ko'rsatish",
-  "Ishlab chiqarish",
-  "Fermer xo'jaligi",
-  "Import va eksport kompaniyalari"
+  "Savdo kompaniyalari",
+  "Xizmat ko'rsatish bizneslari",
+  "Import va eksport kompaniyalari",
+  "Qurilish kompaniyalari",
+  "Startap va yangi bizneslar"
 ];
 
 export const seoServices = [
