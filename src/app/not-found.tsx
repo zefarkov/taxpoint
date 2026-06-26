@@ -1,5 +1,15 @@
+import type { Metadata } from "next";
 import { ButtonLink } from "@/components/ButtonLink";
 import { TelegramButton } from "@/components/TelegramButton";
+
+export const metadata: Metadata = {
+  title: "Sahifa topilmadi",
+  description: "TAXPOINT saytida izlangan sahifa topilmadi.",
+  robots: {
+    index: false,
+    follow: true
+  }
+};
 
 const quickLinks = [
   { label: "Tariflar", href: "/#tariflar" },

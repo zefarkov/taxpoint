@@ -4,13 +4,14 @@ import { ContactSection } from "@/components/ContactSection";
 import { FAQ } from "@/components/FAQ";
 import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";
+import { JsonLd } from "@/components/JsonLd";
 import { LeadFormModal } from "@/components/LeadFormModal";
 import { Hero } from "@/components/Hero";
 import { PricingCard } from "@/components/PricingCard";
 import { SectionHeading } from "@/components/SectionHeading";
 import { ServiceCategory } from "@/components/ServiceCategory";
 import { TrustMetrics } from "@/components/TrustMetrics";
-import { faqs, pricingPlans, serviceCategories } from "@/data/site";
+import { faqs, googleMapsUrl, phoneNumbers, pricingPlans, serviceCategories, telegramUrl } from "@/data/site";
 
 const problems = [
   "Hisobotlarni kech topshirish xavfi",
@@ -36,9 +37,88 @@ const processSteps = [
   "Hisob, hisobot va hujjatlar tartibga olinadi"
 ];
 
+const homeSchemas = [
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "@id": "https://taxpoint.uz/#organization",
+    name: "TAXPOINT",
+    url: "https://taxpoint.uz/",
+    logo: "https://taxpoint.uz/brand/logo-main-horizontal.png",
+    sameAs: [telegramUrl],
+    contactPoint: [
+      {
+        "@type": "ContactPoint",
+        telephone: phoneNumbers[0].label,
+        contactType: "customer service",
+        areaServed: "UZ",
+        availableLanguage: ["uz", "ru"]
+      }
+    ]
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": ["LocalBusiness", "ProfessionalService"],
+    "@id": "https://taxpoint.uz/#localbusiness",
+    name: "TAXPOINT",
+    url: "https://taxpoint.uz/",
+    image: "https://taxpoint.uz/brand/logo-main-horizontal.png",
+    logo: "https://taxpoint.uz/brand/logo-main-horizontal.png",
+    description:
+      "Farg'ona buxgalteriya xizmatlari, soliq hisobotlari, YATT ochish, MCHJ ro'yxatdan o'tkazish, E-IMZO va elektron tizimlarni sozlash xizmatlari.",
+    telephone: phoneNumbers.map((phone) => phone.label),
+    address: {
+      "@type": "PostalAddress",
+      streetAddress: "Mustaqillik ko'chasi 193-uy",
+      addressLocality: "Farg'ona",
+      addressCountry: "UZ"
+    },
+    areaServed: [
+      {
+        "@type": "City",
+        name: "Farg'ona"
+      },
+      {
+        "@type": "Country",
+        name: "Uzbekistan"
+      }
+    ],
+    openingHours: "Mo-Sa 09:00-18:00",
+    hasMap: googleMapsUrl,
+    priceRange: "$$",
+    knowsAbout: [
+      "Buxgalteriya xizmatlari",
+      "Soliq hisobotlari",
+      "YATT ochish",
+      "MCHJ ro'yxatdan o'tkazish",
+      "QQS hisoboti",
+      "E-IMZO olish"
+    ],
+    makesOffer: [
+      "Buxgalteriya xizmatlari",
+      "Soliq hisobotlari",
+      "YATT ochish",
+      "MCHJ ro'yxatdan o'tkazish",
+      "Farg'ona buxgalteriya xizmatlari"
+    ]
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "@id": "https://taxpoint.uz/#website",
+    name: "TAXPOINT",
+    url: "https://taxpoint.uz/",
+    publisher: {
+      "@id": "https://taxpoint.uz/#organization"
+    },
+    inLanguage: "uz-Latn-UZ"
+  }
+];
+
 export default function Home() {
   return (
     <>
+      <JsonLd data={homeSchemas} />
       <Header />
       <main>
         <Hero />
@@ -83,7 +163,7 @@ export default function Home() {
         <section id="royxatdan-otkazish" className="section-padding bg-navy-50">
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <SectionHeading
-              
+              eyebrow="Ro‘yxatdan o‘tkazish"
               title="YATT va MCHJ ro‘yxatdan o‘tkazish"
               description="Biznesni boshlash uchun hujjatlar, soliq kalitlari va hisobga qo‘yish jarayonlarini tartibli tayyorlashda yordam beramiz."
               align="center"
@@ -133,7 +213,7 @@ export default function Home() {
         <section id="xizmatlar" className="section-padding bg-white">
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <SectionHeading
-              
+              eyebrow="Xizmatlar"
               title="Qo‘shimcha buxgalteriya va soliq xizmatlari"
               description="Bir martalik vazifalar, elektron tizimlar, kadrlar hujjatlari va soliq hisobotlari bo‘yicha alohida yordam."
               align="center"
@@ -170,8 +250,8 @@ export default function Home() {
         <section className="section-padding bg-white">
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <SectionHeading
-
-              title="Hamkorlik jarayoni"
+              eyebrow="Jarayon"
+              title="Hamkorlik oddiy va tushunarli boshlanadi"
               align="center"
             />
             <div className="mt-12 grid gap-5 md:grid-cols-4">
@@ -190,7 +270,7 @@ export default function Home() {
         <section id="savollar" className="section-padding bg-navy-50">
           <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
             <SectionHeading
-
+              eyebrow="Savollar"
               title="Ko‘p so‘raladigan savollar"
               description="Tariflar, ro‘yxatdan o‘tkazish va elektron xizmatlar bo‘yicha qisqa javoblar."
               align="center"
