@@ -83,7 +83,7 @@ export default function Home() {
         <section id="royxatdan-otkazish" className="section-padding bg-navy-50">
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <SectionHeading
-              eyebrow="Ro‘yxatdan o‘tkazish"
+              
               title="YATT va MCHJ ro‘yxatdan o‘tkazish"
               description="Biznesni boshlash uchun hujjatlar, soliq kalitlari va hisobga qo‘yish jarayonlarini tartibli tayyorlashda yordam beramiz."
               align="center"
@@ -133,7 +133,7 @@ export default function Home() {
         <section id="xizmatlar" className="section-padding bg-white">
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <SectionHeading
-              eyebrow="Xizmatlar"
+              
               title="Qo‘shimcha buxgalteriya va soliq xizmatlari"
               description="Bir martalik vazifalar, elektron tizimlar, kadrlar hujjatlari va soliq hisobotlari bo‘yicha alohida yordam."
               align="center"
@@ -170,8 +170,8 @@ export default function Home() {
         <section className="section-padding bg-white">
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <SectionHeading
-              eyebrow="Jarayon"
-              title="Hamkorlik oddiy va tushunarli boshlanadi"
+
+              title="Hamkorlik jarayoni"
               align="center"
             />
             <div className="mt-12 grid gap-5 md:grid-cols-4">
@@ -190,7 +190,7 @@ export default function Home() {
         <section id="savollar" className="section-padding bg-navy-50">
           <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
             <SectionHeading
-              eyebrow="Savollar"
+
               title="Ko‘p so‘raladigan savollar"
               description="Tariflar, ro‘yxatdan o‘tkazish va elektron xizmatlar bo‘yicha qisqa javoblar."
               align="center"
