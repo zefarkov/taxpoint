@@ -21,8 +21,8 @@ export function CTA() {
           <ButtonLink href="#tariflar" variant="outline" className="border-white/30 bg-white text-navy-900 hover:bg-navy-50 hover:shadow-glow">
             Tariflarni ko‘rish
           </ButtonLink>
-          <TelegramButton label="Telegram" inverted />
-          <PhoneModal className="border-white/30 bg-transparent text-white hover:bg-white/10 sm:min-w-40" />
+          <PhoneModal inverted />
+          <TelegramButton compact inverted />
         </div>
       </div>
     </section>
