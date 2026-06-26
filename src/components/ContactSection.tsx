@@ -26,7 +26,7 @@ export function ContactSection() {
             <LeadFormModal context="KONSULTATSIYA" variant="secondary">
               Konsultatsiya olish
             </LeadFormModal>
-            <TelegramButton label="Telegram orqali yozish" />
+            <TelegramButton compact />
           </div>
         </div>
 
