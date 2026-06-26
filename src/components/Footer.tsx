@@ -40,7 +40,7 @@ export function Footer() {
           <p className="font-semibold text-white">Aloqa</p>
           <div className="mt-3 flex flex-wrap gap-2">
             <PhoneModal className="min-h-10 px-3 py-2" />
-            <TelegramButton label={telegramLabel} className="min-h-10 px-3 py-2" />
+            <TelegramButton compact />
           </div>
           <p>Ish vaqti: Dushanba - Shanba, 09:00 - 18:00</p>
           <p>Manzil: {address}</p>
