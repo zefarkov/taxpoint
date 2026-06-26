@@ -19,7 +19,7 @@ const problems = [
   "Rahbarning vaqtini buxgalteriyaga sarflashi"
 ];
 
-const whyTaxPoint = [
+const whyTaxpoint = [
   "Hisobotlar muddatida topshiriladi",
   "Soliq xavflari kamayadi",
   "Rahbar vaqtini tejaydi",
@@ -151,13 +151,13 @@ export default function Home() {
         <section className="section-padding bg-slate-50">
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <SectionHeading
-              eyebrow="Nega TaxPoint"
+              eyebrow="Nega TAXPOINT"
               title="Hisob, soliq va hujjatlarda tartib"
-              description="TaxPoint biznes uchun muhim jarayonlarni nazoratga olib, rahbarning vaqtini asosiy ishga qaytarishga yordam beradi."
+              description="TAXPOINT biznes uchun muhim jarayonlarni nazoratga olib, rahbarning vaqtini asosiy ishga qaytarishga yordam beradi."
               align="center"
             />
             <div className="mt-12 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-              {whyTaxPoint.map((item) => (
+              {whyTaxpoint.map((item) => (
                 <div key={item} className="rounded-lg border border-slate-200 bg-white p-5 font-medium text-navy-900 shadow-sm">
                   {item}
                 </div>

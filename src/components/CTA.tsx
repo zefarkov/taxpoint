@@ -10,7 +10,7 @@ export function CTA() {
             Buxgalteriyani tartibga keltirishni bugun boshlang
           </h2>
           <p className="mt-4 text-lg leading-8 text-navy-100">
-            TaxPoint sizga hisob, soliq va hujjatlar bilan bog‘liq ishlarni
+            TAXPOINT sizga hisob, soliq va hujjatlar bilan bog‘liq ishlarni
             tizimli yuritishda yordam beradi.
           </p>
         </div>

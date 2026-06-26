@@ -8,11 +8,11 @@ export function Footer() {
           <a
             href="/#bosh-sahifa"
             className="inline-flex rounded-md py-1 pr-2 transition hover:opacity-90"
-            aria-label="TaxPoint bosh sahifa"
+            aria-label="TAXPOINT bosh sahifa"
           >
             <img
               src="/brand/logo-main-horizontal.png"
-              alt="TaxPoint"
+              alt="TAXPOINT"
               className="h-12 w-auto max-w-[220px] object-contain sm:h-14 sm:max-w-[260px]"
             />
           </a>
@@ -41,7 +41,7 @@ export function Footer() {
         </div>
       </div>
       <div className="border-t border-slate-200 py-5 text-center text-sm text-slate-500">
-        © 2026 TaxPoint. Barcha huquqlar himoyalangan.
+        © 2026 TAXPOINT. Barcha huquqlar himoyalangan.
       </div>
     </footer>
   );

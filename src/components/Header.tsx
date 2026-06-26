@@ -8,11 +8,11 @@ export function Header() {
         <a
           href="/#bosh-sahifa"
           className="flex shrink-0 items-center rounded-md py-1 pr-2 transition hover:opacity-90"
-          aria-label="TaxPoint bosh sahifa"
+          aria-label="TAXPOINT bosh sahifa"
         >
           <img
             src="/brand/logo-main-horizontal.png"
-            alt="TaxPoint"
+            alt="TAXPOINT"
             className="h-10 w-auto max-w-[168px] object-contain sm:h-12 sm:max-w-[210px]"
           />
         </a>

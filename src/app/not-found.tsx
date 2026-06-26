@@ -19,11 +19,11 @@ export default function NotFound() {
             <a
               href="/#bosh-sahifa"
               className="inline-flex rounded-md py-1 pr-2 transition hover:opacity-90"
-              aria-label="TaxPoint bosh sahifa"
+              aria-label="TAXPOINT bosh sahifa"
             >
               <img
                 src="/brand/logo-main-horizontal.png"
-                alt="TaxPoint"
+                alt="TAXPOINT"
                 className="h-12 w-auto max-w-[220px] object-contain sm:h-14 sm:max-w-[270px]"
               />
             </a>

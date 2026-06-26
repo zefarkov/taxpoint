@@ -114,7 +114,7 @@ export const faqs = [
   {
     question: "Qaysi tarif menga mos?",
     answer:
-      "Tarif korxonangizdagi hodimlar soni, operatsiyalar hajmi va soliq rejimiga qarab tanlanadi. TaxPoint holatingizni ko‘rib, mos tarifni tavsiya qiladi."
+      "Tarif korxonangizdagi hodimlar soni, operatsiyalar hajmi va soliq rejimiga qarab tanlanadi. TAXPOINT holatingizni ko‘rib, mos tarifni tavsiya qiladi."
   },
   {
     question: "QQS to‘lovchi korxonalar uchun xizmat bormi?",
@@ -129,7 +129,7 @@ export const faqs = [
   {
     question: "MCHJ ochish qancha vaqt oladi?",
     answer:
-      "Muddat hujjatlar tayyorligi va davlat xizmatlari jarayoniga bog‘liq. TaxPoint hujjatlarni tayyorlash, soliq kalitlarini olish va hisobga qo‘yish bosqichlarida yordam beradi."
+      "Muddat hujjatlar tayyorligi va davlat xizmatlari jarayoniga bog‘liq. TAXPOINT hujjatlarni tayyorlash, soliq kalitlarini olish va hisobga qo‘yish bosqichlarida yordam beradi."
   },
   {
     question: "0 hisobot topshirish mumkinmi?",
@@ -173,7 +173,7 @@ export const seoServices = [
     slug: "buxgalteriya-xizmati",
     title: "Buxgalteriya xizmati",
     description:
-      "TaxPoint korxonalar uchun oylik buxgalteriya hisobini yuritish, soliq hisobotlarini tayyorlash va hujjatlarni tartibga keltirish xizmatlarini ko‘rsatadi.",
+      "TAXPOINT korxonalar uchun oylik buxgalteriya hisobini yuritish, soliq hisobotlarini tayyorlash va hujjatlarni tartibga keltirish xizmatlarini ko‘rsatadi.",
     bullets: [
       "Oylik buxgalteriya hisobini yuritish",
       "Soliq hisobotlarini muddatida topshirish",

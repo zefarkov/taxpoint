@@ -12,7 +12,7 @@ export function Hero() {
     <section id="bosh-sahifa" className="relative overflow-hidden border-b border-slate-200 bg-white">
       <div className="absolute inset-x-0 top-0 h-56 bg-slate-50" aria-hidden="true" />
       <div className="absolute right-0 top-0 h-full w-1/3 border-l border-slate-100 bg-navy-50/40" aria-hidden="true" />
-      <div className="relative mx-auto grid max-w-7xl gap-12 px-4 py-16 sm:px-6 lg:grid-cols-[1.08fr_0.92fr] lg:px-8 lg:py-28">
+      <div className="relative mx-auto grid max-w-7xl items-center gap-10 px-4 pb-16 pt-10 sm:px-6 sm:pt-12 lg:grid-cols-[1.08fr_0.92fr] lg:gap-12 lg:px-8 lg:pb-20 lg:pt-14">
         <div className="flex flex-col justify-center">
           <p className="mb-5 inline-flex w-fit rounded-md border border-navy-100 bg-white px-4 py-2 text-sm font-semibold text-navy-800 shadow-sm">
             Soliq, hisobot va hujjatlar bo‘yicha doimiy nazorat
@@ -21,7 +21,7 @@ export function Hero() {
             Buxgalteriyani tartibli, xavfsiz va jarimasiz yuriting
           </h1>
           <p className="mt-6 max-w-2xl text-lg leading-8 text-slate-600">
-            TaxPoint biznesingiz uchun buxgalteriya hisobi, soliq hisobotlari,
+            TAXPOINT biznesingiz uchun buxgalteriya hisobi, soliq hisobotlari,
             YATT va MCHJ ro‘yxatdan o‘tkazish hamda elektron tizimlarni sozlash
             xizmatlarini taqdim etadi.
           </p>
@@ -43,10 +43,10 @@ export function Hero() {
           </div>
         </div>
 
-        <div className="rounded-lg border border-slate-200 bg-white p-6 shadow-soft lg:p-8">
+        <div className="rounded-lg border border-slate-200 bg-white p-6 shadow-soft lg:self-center lg:p-8">
           <div className="flex items-start justify-between gap-6 border-b border-slate-200 pb-6">
             <div>
-              <p className="text-sm font-semibold text-slate-500">TaxPoint nazorati</p>
+              <p className="text-sm font-semibold text-slate-500">TAXPOINT nazorati</p>
               <p className="mt-2 text-2xl font-semibold text-navy-900">Rahbar uchun tinch buxgalteriya</p>
             </div>
             <div className="hidden rounded-md bg-navy-50 px-4 py-3 text-right sm:block">

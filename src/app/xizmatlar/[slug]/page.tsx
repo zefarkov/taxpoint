@@ -25,7 +25,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   }
 
   return {
-    title: `${service.title} — TaxPoint`,
+    title: `${service.title} — TAXPOINT`,
     description: service.description,
     alternates: {
       canonical: `/xizmatlar/${service.slug}`
@@ -52,7 +52,7 @@ export default async function ServicePage({ params }: PageProps) {
             </a>
             <div className="mt-8 max-w-3xl">
               <p className="mb-3 text-sm font-semibold uppercase tracking-normal text-navy-700">
-                TaxPoint xizmati
+                TAXPOINT xizmati
               </p>
               <h1 className="text-4xl font-semibold tracking-normal text-navy-900 sm:text-5xl">
                 {service.title}

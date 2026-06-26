@@ -1,6 +1,6 @@
-# TaxPoint website
+# TAXPOINT website
 
-Production-ready static Next.js website for TaxPoint, an accounting and tax services company in Uzbekistan. The project is configured for GitHub Pages deployment with static export to `/out`.
+Production-ready static Next.js website for TAXPOINT, an accounting and tax services company in Uzbekistan. The project is configured for GitHub Pages deployment with static export to `/out`.
 
 ## Tech stack
 
