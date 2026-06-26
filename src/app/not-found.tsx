@@ -28,10 +28,10 @@ export default function NotFound() {
               />
             </a>
 
-            <p className="mt-12 text-8xl font-semibold leading-none tracking-normal text-navy-900 sm:text-9xl">
+            <p className="mt-12 text-8xl font-extrabold leading-none tracking-normal text-navy-900 sm:text-9xl">
               404
             </p>
-            <h1 className="mt-6 text-3xl font-semibold tracking-normal text-navy-900 sm:text-5xl">
+            <h1 className="mt-6 text-3xl font-extrabold tracking-normal text-navy-900 sm:text-5xl">
               Sahifa topilmadi
             </h1>
             <p className="mt-5 max-w-2xl text-lg leading-8 text-slate-600">

@@ -5,12 +5,16 @@ type FAQProps = {
 
 export function FAQ({ question, answer }: FAQProps) {
   return (
-    <details className="group rounded-lg border border-slate-200 bg-white p-5 shadow-sm">
-      <summary className="flex cursor-pointer list-none items-center justify-between gap-4 text-left font-semibold text-navy-900">
+    <details className="group h-full rounded-lg border border-slate-200 bg-white p-5 shadow-sm transition hover:border-navy-100 hover:shadow-soft">
+      <summary className="flex cursor-pointer list-none items-start justify-between gap-4 text-left text-base font-bold leading-6 text-navy-900 [&::-webkit-details-marker]:hidden">
         <span>{question}</span>
-        <span className="text-xl leading-none text-navy-700 transition group-open:rotate-45">+</span>
+        <span className="mt-0.5 flex h-7 w-7 shrink-0 items-center justify-center rounded-full border border-slate-200 bg-slate-50 text-lg leading-none text-navy-700 transition group-open:rotate-45 group-open:border-electric-500 group-open:bg-navy-50">
+          +
+        </span>
       </summary>
-      <p className="mt-4 leading-7 text-slate-600">{answer}</p>
+      <div className="overflow-hidden transition-all duration-300 ease-in-out">
+        <p className="mt-4 text-sm leading-7 text-slate-600">{answer}</p>
+      </div>
     </details>
   );
 }

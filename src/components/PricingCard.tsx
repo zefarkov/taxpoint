@@ -20,16 +20,16 @@ export function PricingCard({ plan }: PricingCardProps) {
       }`}
     >
       {plan.recommended ? (
-        <span className="absolute right-5 top-5 rounded-md bg-electric-500 px-3 py-1 text-xs font-semibold text-white shadow-sm">
+        <span className="absolute right-5 top-5 rounded-md bg-electric-500 px-3 py-1 text-xs font-bold text-white shadow-sm">
           Eng ko‘p tanlanadi
         </span>
       ) : null}
       <div className="border-b border-slate-200 pb-5">
-        <h3 className="text-2xl font-semibold text-navy-900">{plan.name}</h3>
+        <h3 className="text-2xl font-bold text-navy-900">{plan.name}</h3>
         <p className="mt-3 min-h-12 text-sm leading-6 text-slate-600">{plan.description}</p>
       </div>
       <div className="mt-6 min-h-20">
-        <span className="block text-3xl font-semibold leading-tight text-navy-900">{plan.price}</span>
+        <span className="block text-3xl font-extrabold leading-tight text-navy-900">{plan.price}</span>
         <span className="ml-1 text-sm font-medium text-slate-500">{plan.period}</span>
       </div>
       <ul className="mt-2 grid gap-3 text-sm leading-6 text-slate-700">

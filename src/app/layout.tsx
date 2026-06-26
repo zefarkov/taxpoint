@@ -1,6 +1,13 @@
 import type { Metadata, Viewport } from "next";
+import { Manrope } from "next/font/google";
 import { Preloader } from "@/components/Preloader";
 import "./globals.css";
+
+const manrope = Manrope({
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700", "800"],
+  display: "swap"
+});
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://taxpoint.uz"),
@@ -48,7 +55,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="uz">
-      <body>
+      <body className={manrope.className}>
         <Preloader />
         {children}
       </body>

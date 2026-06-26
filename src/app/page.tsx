@@ -90,7 +90,7 @@ export default function Home() {
             />
             <div className="mt-12 grid gap-6 lg:grid-cols-2">
               <article className="rounded-lg border border-slate-200 bg-white p-7 shadow-sm">
-                <h3 className="text-2xl font-semibold text-navy-900">YATT</h3>
+                <h3 className="text-2xl font-bold text-navy-900">YATT</h3>
                 <ul className="mt-6 grid gap-3 leading-7 text-slate-700">
                   {[
                     "YATTni davlat organlaridan ro‘yxatdan o‘tkazish",
@@ -105,7 +105,7 @@ export default function Home() {
                 </ul>
               </article>
               <article className="rounded-lg border border-slate-200 bg-white p-7 shadow-sm">
-                <h3 className="text-2xl font-semibold text-navy-900">MCHJ</h3>
+                <h3 className="text-2xl font-bold text-navy-900">MCHJ</h3>
                 <ul className="mt-6 grid gap-3 leading-7 text-slate-700">
                   {[
                     "MCHJ ro‘yxatdan o‘tkazish uchun kerakli hujjatlarni tayyorlash",
@@ -180,7 +180,7 @@ export default function Home() {
                   <div className="flex h-10 w-10 items-center justify-center rounded-md bg-navy-900 text-sm font-semibold text-white">
                     {index + 1}
                   </div>
-                  <h3 className="mt-5 text-lg font-semibold leading-7 text-navy-900">{step}</h3>
+                  <h3 className="mt-5 text-lg font-bold leading-7 text-navy-900">{step}</h3>
                 </article>
               ))}
             </div>
@@ -188,14 +188,14 @@ export default function Home() {
         </section>
 
         <section id="savollar" className="section-padding bg-slate-50">
-          <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
+          <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
             <SectionHeading
               eyebrow="Savollar"
               title="Ko‘p so‘raladigan savollar"
               description="Tariflar, ro‘yxatdan o‘tkazish va elektron xizmatlar bo‘yicha qisqa javoblar."
               align="center"
             />
-            <div className="mt-10 grid gap-4">
+            <div className="mt-10 grid items-start gap-4 md:grid-cols-2">
               {faqs.map((faq) => (
                 <FAQ key={faq.question} {...faq} />
               ))}

@@ -4,10 +4,10 @@ export const phoneNumbers = [
   { label: "+998 50 009 00 50", href: "tel:+998500090050" }
 ];
 export const telegramUrl = "https://t.me/+998930453736";
-export const telegramLabel = "Telegram orqali yozish";
+export const telegramLabel = "Telegram";
 export const consultationHref = "/#contact-form";
 export const address = "Farg'ona shahar, Mustaqillik ko'chasi 193-uy";
-export const googleMapsUrl = "https://maps.app.goo.gl/HaSTYUr6S11YeiVq5";
+export const googleMapsUrl = "https://maps.app.goo.gl/7TM91pP6ZaUT33HB6";
 export const yandexMapsUrl = "https://yandex.uz/maps/-/CTQpuB11";
 
 export const navItems = [

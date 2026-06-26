@@ -14,11 +14,11 @@ export function SectionHeading({
   return (
     <div className={align === "center" ? "mx-auto max-w-3xl text-center" : "max-w-3xl"}>
       {eyebrow ? (
-        <p className="mb-3 text-sm font-semibold uppercase tracking-normal text-navy-700">
+        <p className="mb-3 text-sm font-bold uppercase tracking-normal text-navy-700">
           {eyebrow}
         </p>
       ) : null}
-      <h2 className="text-3xl font-semibold tracking-normal text-navy-900 sm:text-4xl">
+      <h2 className="text-3xl font-extrabold tracking-normal text-navy-900 sm:text-4xl">
         {title}
       </h2>
       {description ? (

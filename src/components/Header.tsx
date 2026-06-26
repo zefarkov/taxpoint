@@ -1,5 +1,6 @@
 import { ButtonLink } from "@/components/ButtonLink";
-import { consultationHref, navItems, phoneNumbers, telegramUrl } from "@/data/site";
+import { PhoneModal } from "@/components/PhoneModal";
+import { consultationHref, navItems, telegramUrl } from "@/data/site";
 
 export function Header() {
   return (
@@ -31,18 +32,12 @@ export function Header() {
           </ButtonLink>
           <a
             href={telegramUrl}
-            className="inline-flex h-11 items-center justify-center rounded-md border border-slate-300 bg-white px-3 text-sm font-semibold text-navy-900 shadow-sm transition hover:border-electric-500 hover:bg-navy-50"
+            className="pulse-telegram inline-flex h-11 items-center justify-center rounded-md border border-slate-300 bg-white px-3 text-sm font-semibold text-navy-900 shadow-sm transition hover:border-electric-500 hover:bg-navy-50"
             aria-label="Telegram orqali yozish"
           >
             TG
           </a>
-          <a
-            href={phoneNumbers[0].href}
-            className="inline-flex h-11 items-center justify-center rounded-md border border-slate-300 bg-white px-3 text-sm font-semibold text-navy-900 shadow-sm transition hover:border-electric-500 hover:bg-navy-50"
-            aria-label="Telefon qilish"
-          >
-            Tel
-          </a>
+          <PhoneModal className="h-11 min-h-0 px-3 py-0" />
         </div>
 
         <details className="group relative xl:hidden">
@@ -68,16 +63,11 @@ export function Header() {
             <div className="mt-2 grid grid-cols-2 gap-2">
               <a
                 href={telegramUrl}
-                className="inline-flex min-h-11 items-center justify-center rounded-md border border-slate-300 bg-white px-3 text-sm font-semibold text-navy-900 transition hover:bg-navy-50"
+                className="pulse-telegram inline-flex min-h-11 items-center justify-center rounded-md border border-slate-300 bg-white px-3 text-sm font-semibold text-navy-900 transition hover:bg-navy-50"
               >
                 Telegram
               </a>
-              <a
-                href={phoneNumbers[0].href}
-                className="inline-flex min-h-11 items-center justify-center rounded-md border border-slate-300 bg-white px-3 text-sm font-semibold text-navy-900 transition hover:bg-navy-50"
-              >
-                Qo‘ng‘iroq
-              </a>
+              <PhoneModal className="w-full px-3" />
             </div>
           </div>
         </details>

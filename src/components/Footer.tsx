@@ -1,8 +1,8 @@
+import { PhoneModal } from "@/components/PhoneModal";
 import {
   address,
   googleMapsUrl,
   navItems,
-  phoneNumbers,
   telegramLabel,
   telegramUrl,
   yandexMapsUrl
@@ -38,17 +38,7 @@ export function Footer() {
         </nav>
         <div className="text-sm leading-7 text-slate-600">
           <p className="font-semibold text-navy-900">Aloqa</p>
-          <div className="mt-3 grid gap-1">
-            {phoneNumbers.map((phone) => (
-              <a
-                key={phone.href}
-                href={phone.href}
-                className="font-medium text-navy-900 transition hover:text-electric-600"
-              >
-                {phone.label}
-              </a>
-            ))}
-          </div>
+          <PhoneModal className="mt-3 w-full justify-center sm:w-auto" />
           <p>
             Telegram: <a href={telegramUrl} className="font-medium text-navy-900 hover:text-electric-600">{telegramLabel}</a>
           </p>
