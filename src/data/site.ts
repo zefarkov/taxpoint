@@ -6,7 +6,7 @@ export const phoneNumbers = [
 export const telegramUrl = "https://t.me/+998930453736";
 export const telegramLabel = "Telegram";
 export const address = "Farg'ona shahar, Mustaqillik ko'chasi 193-uy";
-export const googleMapsUrl = "https://maps.app.goo.gl/HaSTYUr6S11YeiVq5";
+export const googleMapsUrl = "https://maps.app.goo.gl/WSjvR8mqZwDfj9t16";
 export const yandexMapsUrl = "https://yandex.uz/maps/-/CTQpuB11";
 
 export const navItems = [
