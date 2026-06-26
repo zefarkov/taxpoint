@@ -10,9 +10,6 @@ export function ContactSection() {
         <div className="overflow-hidden rounded-2xl border border-navy-100 bg-gradient-to-br from-white via-[#F8FBFF] to-navy-50 shadow-[0_28px_90px_rgba(10,35,66,0.14)]">
           <div className="grid lg:grid-cols-[1.08fr_0.92fr]">
             <div className="p-6 sm:p-8 lg:p-10 xl:p-12">
-              <p className="text-sm font-extrabold uppercase tracking-normal text-electric-600">
-                ALOQA
-              </p>
               <h2 className="mt-3 max-w-2xl text-3xl font-extrabold tracking-normal text-navy-900 sm:text-4xl lg:text-5xl">
                 Mutaxassis bilan bog'laning
               </h2>
@@ -43,7 +40,7 @@ export function ContactSection() {
                     href={googleMapsUrl}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex min-h-11 items-center justify-center rounded-md border border-white/20 bg-white px-4 py-3 text-sm font-extrabold text-navy-900 shadow-[0_10px_24px_rgba(0,0,0,0.14)] transition hover:border-electric-400 hover:bg-navy-50 hover:shadow-glow focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-electric-400"
+                    className="inline-flex min-h-11 items-center justify-center rounded-md border border-white/20 bg-white/10 px-4 py-3 text-sm font-extrabold text-white transition hover:border-electric-400 hover:bg-white/15 hover:shadow-glow focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-electric-400"
                   >
                     Google Maps
                   </a>
@@ -56,11 +53,6 @@ export function ContactSection() {
                     Yandex Maps
                   </a>
                 </div>
-              </div>
-              <div className="mt-5 rounded-xl border border-white/10 bg-white/[0.05] p-5">
-                <p className="text-sm font-semibold leading-6 text-navy-100">
-                  Telefon raqamlar to'g'ridan-to'g'ri ko'rsatilmaydi. Qo'ng'iroq tugmasi orqali qulay raqamni tanlang.
-                </p>
               </div>
             </div>
           </div>
