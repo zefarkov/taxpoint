@@ -4,7 +4,7 @@ import { TelegramButton } from "@/components/TelegramButton";
 
 export function CTA() {
   return (
-    <section className="relative overflow-hidden bg-gradient-to-br from-navy-900 via-navy-800 to-[#061A33] py-18 text-white sm:py-20">
+    <section className="relative overflow-hidden bg-gradient-to-br from-navy-900 via-navy-800 to-[#061A33] py-16 text-white sm:py-20">
       <div
         className="absolute inset-0 opacity-[0.08]"
         aria-hidden="true"

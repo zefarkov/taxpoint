@@ -21,7 +21,7 @@ export function Preloader() {
 
   return (
     <div
-      className={`fixed inset-0 z-[100] flex items-center justify-center bg-white transition-opacity duration-300 ${
+      className={`preloader-safe-hide pointer-events-none fixed inset-0 z-[100] flex items-center justify-center bg-white transition-opacity duration-300 ${
         state === "leaving" ? "opacity-0" : "opacity-100"
       }`}
       aria-hidden="true"
