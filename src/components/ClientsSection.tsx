@@ -27,9 +27,6 @@ export function ClientsSection() {
     <section className="section-padding overflow-hidden bg-navy-50">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-3xl text-center">
-          <p className="text-sm font-bold uppercase tracking-normal text-navy-700">
-            Ishonch
-          </p>
           <h2 className="mt-3 text-3xl font-extrabold tracking-normal text-navy-900 sm:text-4xl">
             Biz bilan ishlayotganlar
           </h2>
