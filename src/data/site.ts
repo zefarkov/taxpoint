@@ -167,11 +167,11 @@ export const trustMetrics = [
 ];
 
 export const clientCategories = [
-  "Savdo kompaniyalari",
+  "Ulgurji va chakana savdo",
   "Xizmat ko'rsatish bizneslari",
-  "Import va eksport kompaniyalari",
-  "Qurilish kompaniyalari",
-  "Startap va yangi bizneslar"
+  "Ishlab chiqarish bizneslari",
+  "Fermer xo'jaligi",
+  "Import va eksport kompaniyalari"
 ];
 
 export const seoServices = [
