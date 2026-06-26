@@ -104,10 +104,9 @@ export function PhoneModal({ className = "" }: PhoneModalProps) {
             <div className="flex items-start justify-between gap-4">
               <div>
                 <h2 id="phone-modal-title" className="text-2xl font-extrabold text-navy-900">
-                  Telefon orqali bog'lanish
+                  Telefon raqamlarimiz
                 </h2>
                 <p id="phone-modal-description" className="mt-2 text-sm leading-6 text-slate-700">
-                  O'zingizga qulay raqamni tanlang
                 </p>
               </div>
               <button
@@ -144,7 +143,6 @@ export function PhoneModal({ className = "" }: PhoneModalProps) {
                   <span className="min-w-0">
                     <span className="block text-base font-extrabold text-navy-900">{phone.label}</span>
                     <span className="mt-1 block text-sm font-semibold text-slate-500">
-                      Qo'ng'iroq qilish
                     </span>
                   </span>
                 </a>
