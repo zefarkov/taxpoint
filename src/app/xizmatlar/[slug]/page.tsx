@@ -46,26 +46,26 @@ export default async function ServicePage({ params }: PageProps) {
     <>
       <Header />
       <main>
-        <section className="bg-white py-16">
+        <section className="bg-navy-50 py-16">
           <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
-            <a href="/" className="text-sm font-bold text-navy-700 hover:text-navy-900">
+            <a href="/" className="text-sm font-bold text-electric-600 hover:text-navy-900">
               Bosh sahifaga qaytish
             </a>
             <div className="mt-8 max-w-3xl">
-              <p className="mb-3 text-sm font-bold uppercase tracking-normal text-navy-700">
+              <p className="mb-3 text-sm font-extrabold uppercase tracking-normal text-electric-600">
                 TAXPOINT xizmati
               </p>
               <h1 className="text-4xl font-extrabold tracking-normal text-navy-900 sm:text-5xl">
                 {service.title}
               </h1>
-              <p className="mt-5 text-lg leading-8 text-slate-600">{service.description}</p>
+              <p className="mt-5 text-lg leading-8 text-slate-700">{service.description}</p>
             </div>
-            <div className="mt-10 rounded-lg border border-slate-200 bg-slate-50 p-6">
+            <div className="mt-10 rounded-lg border border-navy-100 bg-white p-6 shadow-soft">
               <h2 className="text-2xl font-bold text-navy-900">Xizmat tarkibi</h2>
               <ul className="mt-6 grid gap-3 leading-7 text-slate-700">
                 {service.bullets.map((bullet) => (
                   <li key={bullet} className="flex gap-3">
-                    <span className="mt-3 h-1.5 w-1.5 shrink-0 rounded-full bg-success-500" />
+                    <span className="mt-3 h-1.5 w-1.5 shrink-0 rounded-full bg-electric-500" />
                     <span>{bullet}</span>
                   </li>
                 ))}

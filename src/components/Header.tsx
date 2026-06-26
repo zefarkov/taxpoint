@@ -5,7 +5,7 @@ import { consultationHref, navItems } from "@/data/site";
 
 export function Header() {
   return (
-    <header className="sticky top-0 z-50 border-b border-slate-200 bg-white/95 backdrop-blur">
+    <header className="sticky top-0 z-50 border-b border-navy-100 bg-white/95 backdrop-blur">
       <div className="mx-auto flex max-w-7xl items-center justify-between gap-4 px-4 py-3 sm:px-6 lg:px-8">
         <a
           href="/#bosh-sahifa"
@@ -19,9 +19,9 @@ export function Header() {
           />
         </a>
 
-        <nav className="hidden items-center gap-5 text-[15px] font-semibold text-slate-700 xl:flex">
+        <nav className="hidden items-center gap-5 text-[15px] font-semibold text-navy-800 xl:flex">
           {navItems.map((item) => (
-            <a key={item.href} href={item.href} className="transition hover:text-navy-800">
+            <a key={item.href} href={item.href} className="transition hover:text-electric-600">
               {item.label}
             </a>
           ))}
@@ -36,12 +36,12 @@ export function Header() {
         </div>
 
         <details className="group relative xl:hidden">
-          <summary className="flex h-11 w-11 cursor-pointer list-none items-center justify-center rounded-md border border-slate-300 text-navy-900 transition hover:bg-navy-50">
+          <summary className="flex h-11 w-11 cursor-pointer list-none items-center justify-center rounded-md border border-navy-200 text-navy-900 transition hover:border-electric-500 hover:bg-navy-50 hover:shadow-glow">
             <span className="sr-only">Menyuni ochish</span>
             <span className="block h-0.5 w-5 bg-current shadow-[0_6px_0_currentColor,0_-6px_0_currentColor]" />
           </summary>
-          <div className="absolute right-0 mt-3 w-72 rounded-lg border border-slate-200 bg-white p-3 shadow-soft">
-            <nav className="grid gap-1 text-base font-medium text-slate-700">
+          <div className="absolute right-0 mt-3 w-72 rounded-lg border border-navy-100 bg-white p-3 shadow-soft">
+            <nav className="grid gap-1 text-base font-semibold text-navy-800">
               {navItems.map((item) => (
                 <a
                   key={item.href}

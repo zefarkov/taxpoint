@@ -6,17 +6,20 @@ const config: Config = {
     extend: {
       colors: {
         navy: {
-          50: "#eef4ff",
-          100: "#dce9ff",
-          500: "#0d6eea",
-          600: "#1d4f91",
-          700: "#163f75",
-          800: "#12345f",
-          900: "#0b1f3a"
+          50: "#F5F9FF",
+          100: "#EDF4FF",
+          200: "#EAF2FD",
+          300: "#D7E8FB",
+          500: "#2F80ED",
+          600: "#1C4E95",
+          700: "#163B73",
+          800: "#102F5E",
+          900: "#0A2342"
         },
         electric: {
-          500: "#0b7cff",
-          600: "#005fce"
+          400: "#4DA3FF",
+          500: "#3B82F6",
+          600: "#2F80ED"
         },
         success: {
           500: "#168a4a",
@@ -24,7 +27,8 @@ const config: Config = {
         }
       },
       boxShadow: {
-        soft: "0 18px 50px rgba(11, 31, 58, 0.08)"
+        soft: "0 18px 50px rgba(10, 35, 66, 0.11)",
+        glow: "0 0 0 4px rgba(77, 163, 255, 0.18), 0 18px 38px rgba(10, 35, 66, 0.14)"
       }
     }
   },

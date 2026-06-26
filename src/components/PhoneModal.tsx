@@ -84,7 +84,7 @@ export function PhoneModal({ className = "" }: PhoneModalProps) {
         ref={triggerRef}
         type="button"
         onClick={openModal}
-        className={`pulse-phone inline-flex min-h-11 items-center justify-center gap-2 rounded-md border border-slate-300 bg-white px-4 py-3 text-sm font-bold text-navy-900 shadow-sm transition hover:border-electric-500 hover:bg-navy-50 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-navy-700 ${className}`}
+        className={`pulse-phone inline-flex min-h-11 items-center justify-center gap-2 rounded-md border border-navy-200 bg-white px-4 py-3 text-sm font-bold text-navy-900 shadow-[0_8px_22px_rgba(10,35,66,0.06)] transition hover:border-electric-500 hover:bg-navy-50 hover:shadow-glow focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-navy-700 ${className}`}
         aria-haspopup="dialog"
       >
         <svg
@@ -104,7 +104,7 @@ export function PhoneModal({ className = "" }: PhoneModalProps) {
 
       {isMounted ? (
         <div
-          className={`fixed inset-0 z-[110] grid place-items-center bg-navy-900/50 px-4 py-6 backdrop-blur-sm transition-opacity duration-200 motion-reduce:transition-none ${
+          className={`fixed inset-0 z-[110] grid place-items-center bg-navy-900/60 px-4 py-6 backdrop-blur-sm transition-opacity duration-200 motion-reduce:transition-none ${
             isOpen ? "opacity-100" : "opacity-0"
           }`}
           onMouseDown={(event) => {
@@ -119,22 +119,23 @@ export function PhoneModal({ className = "" }: PhoneModalProps) {
             aria-modal="true"
             aria-labelledby="phone-modal-title"
             aria-describedby="phone-modal-description"
-            className={`w-full max-w-md rounded-lg border border-slate-200 bg-white p-5 shadow-[0_24px_80px_rgba(11,31,58,0.22)] transition duration-200 motion-reduce:transition-none sm:p-6 ${
+            className={`w-full max-w-md rounded-lg border border-navy-100 bg-gradient-to-b from-white to-navy-50 p-5 shadow-[0_28px_90px_rgba(10,35,66,0.3)] transition duration-200 motion-reduce:transition-none sm:p-6 ${
               isOpen ? "scale-100 opacity-100" : "scale-[0.985] opacity-0"
             }`}
           >
             <div className="flex items-start justify-between gap-4">
               <div>
                 <h2 id="phone-modal-title" className="text-2xl font-extrabold text-navy-900">
-                  Telefon raqamlarimiz
+                  Telefon orqali bog‘lanish
                 </h2>
-                <p id="phone-modal-description" className="mt-2 text-sm leading-6 text-slate-600">
+                <p id="phone-modal-description" className="mt-2 text-sm leading-6 text-slate-700">
+                  O‘zingizga qulay raqamni tanlang
                 </p>
               </div>
               <button
                 type="button"
                 onClick={closeModal}
-                className="flex h-10 w-10 shrink-0 items-center justify-center rounded-md border border-slate-200 bg-white text-xl leading-none text-navy-900 transition hover:border-electric-500 hover:bg-navy-50 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-navy-700"
+                className="flex h-10 w-10 shrink-0 items-center justify-center rounded-md border border-navy-100 bg-white text-xl leading-none text-navy-900 shadow-[0_8px_20px_rgba(10,35,66,0.06)] transition hover:border-electric-500 hover:bg-navy-50 hover:shadow-glow focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-navy-700"
                 aria-label="Modalni yopish"
               >
                 ×
@@ -146,9 +147,9 @@ export function PhoneModal({ className = "" }: PhoneModalProps) {
                 <a
                   key={phone.href}
                   href={phone.href}
-                  className="pulse-phone group flex min-h-16 items-center gap-4 rounded-lg border border-slate-200 bg-slate-50 p-4 text-left shadow-[0_8px_24px_rgba(11,31,58,0.06)] transition hover:-translate-y-0.5 hover:border-electric-500 hover:bg-white hover:shadow-[0_0_0_4px_rgba(11,124,255,0.13),0_16px_36px_rgba(11,31,58,0.12)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-navy-700"
+                  className="pulse-phone group flex min-h-16 items-center gap-4 rounded-lg border border-navy-100 bg-white p-4 text-left shadow-[0_10px_26px_rgba(10,35,66,0.07)] transition hover:-translate-y-0.5 hover:border-electric-500 hover:bg-navy-50 hover:shadow-glow focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-navy-700"
                 >
-                  <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-md bg-navy-900 text-white transition group-hover:bg-electric-500">
+                  <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-md bg-navy-900 text-white shadow-[0_10px_24px_rgba(10,35,66,0.16)] transition group-hover:bg-electric-500 group-hover:shadow-[0_0_0_5px_rgba(77,163,255,0.18)]">
                     <svg
                       aria-hidden="true"
                       viewBox="0 0 24 24"
@@ -165,6 +166,7 @@ export function PhoneModal({ className = "" }: PhoneModalProps) {
                   <span className="min-w-0">
                     <span className="block text-base font-extrabold text-navy-900">{phone.label}</span>
                     <span className="mt-1 block text-sm font-semibold text-slate-500">
+                      Qo‘ng‘iroq qilish
                     </span>
                   </span>
                 </a>

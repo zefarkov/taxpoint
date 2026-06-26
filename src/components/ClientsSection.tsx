@@ -24,7 +24,7 @@ export function ClientsSection() {
   const marqueeItems = [...logos, ...logos, ...logos, ...logos];
 
   return (
-    <section className="section-padding overflow-hidden bg-white">
+    <section className="section-padding overflow-hidden bg-navy-50">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-3xl text-center">
           <p className="text-sm font-bold uppercase tracking-normal text-navy-700">
@@ -39,13 +39,13 @@ export function ClientsSection() {
         </div>
 
         {logos.length > 0 ? (
-          <div className="mt-10 border-y border-slate-200 py-6">
+          <div className="mt-10 border-y border-navy-100 py-6">
             <div className="marquee group">
               <div className="marquee-track">
                 {marqueeItems.map((logo, index) => (
                   <div
                     key={`${logo.file}-${index}`}
-                    className="flex h-24 min-w-[230px] items-center justify-center rounded-lg border border-slate-200 bg-white px-7 shadow-sm opacity-85 transition duration-200 group-hover:opacity-100 sm:min-w-[280px] lg:min-w-[320px]"
+                    className="flex h-24 min-w-[230px] items-center justify-center rounded-lg border border-navy-100 bg-white px-7 shadow-[0_12px_30px_rgba(10,35,66,0.07)] opacity-85 transition duration-200 hover:border-electric-400 hover:shadow-glow group-hover:opacity-100 sm:min-w-[280px] lg:min-w-[320px]"
                   >
                     <img
                       src={logo.src}
@@ -64,7 +64,7 @@ export function ClientsSection() {
           {clientCategories.map((category) => (
             <article
               key={category}
-              className="flex min-h-24 items-center justify-center rounded-lg border border-slate-200 bg-slate-50 p-5 text-center shadow-sm transition hover:-translate-y-1 hover:border-electric-500 hover:bg-white hover:shadow-soft"
+              className="flex min-h-24 items-center justify-center rounded-lg border border-navy-100 bg-white p-5 text-center shadow-[0_12px_30px_rgba(10,35,66,0.06)] transition hover:-translate-y-1 hover:border-electric-400 hover:bg-navy-50 hover:shadow-soft"
             >
               <h3 className="text-base font-bold leading-6 text-navy-900">{category}</h3>
             </article>

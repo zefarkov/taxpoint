@@ -5,7 +5,7 @@ import { consultationHref } from "@/data/site";
 
 export function CTA() {
   return (
-    <section className="bg-navy-900 py-16 text-white">
+    <section className="bg-gradient-to-r from-navy-900 via-navy-800 to-navy-900 py-16 text-white">
       <div className="mx-auto flex max-w-7xl flex-col items-start justify-between gap-8 px-4 sm:px-6 lg:flex-row lg:items-center lg:px-8">
         <div className="max-w-2xl">
           <h2 className="text-3xl font-extrabold tracking-normal sm:text-4xl">
@@ -18,7 +18,7 @@ export function CTA() {
         </div>
         <div className="flex w-full flex-col gap-3 sm:w-auto sm:flex-row">
           <ButtonLink href={consultationHref}>Konsultatsiya olish</ButtonLink>
-          <ButtonLink href="#tariflar" variant="outline" className="border-white/30 bg-white text-navy-900 hover:bg-navy-50">
+          <ButtonLink href="#tariflar" variant="outline" className="border-white/30 bg-white text-navy-900 hover:bg-navy-50 hover:shadow-glow">
             Tariflarni ko‘rish
           </ButtonLink>
           <TelegramButton label="Telegram" inverted />

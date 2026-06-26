@@ -45,7 +45,7 @@ export default function Home() {
         <ClientsSection />
         <TrustMetrics />
 
-        <section className="section-padding bg-slate-50">
+        <section className="section-padding bg-white">
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <div className="grid gap-10 lg:grid-cols-[0.9fr_1.1fr] lg:items-center">
               <SectionHeading
@@ -55,7 +55,7 @@ export default function Home() {
               />
               <div className="grid gap-3">
                 {problems.map((problem) => (
-                  <div key={problem} className="rounded-lg border border-slate-200 bg-white p-5 font-medium text-slate-700 shadow-sm">
+                  <div key={problem} className="rounded-lg border border-navy-100 bg-navy-50 p-5 font-semibold text-navy-800 shadow-[0_12px_30px_rgba(10,35,66,0.06)] transition hover:border-electric-400 hover:bg-white hover:shadow-soft">
                     {problem}
                   </div>
                 ))}
@@ -80,7 +80,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section id="royxatdan-otkazish" className="section-padding bg-slate-50">
+        <section id="royxatdan-otkazish" className="section-padding bg-navy-50">
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <SectionHeading
               eyebrow="Ro‘yxatdan o‘tkazish"
@@ -89,7 +89,7 @@ export default function Home() {
               align="center"
             />
             <div className="mt-12 grid gap-6 lg:grid-cols-2">
-              <article className="rounded-lg border border-slate-200 bg-white p-7 shadow-sm">
+              <article className="rounded-lg border border-navy-100 bg-white p-7 shadow-soft">
                 <h3 className="text-2xl font-bold text-navy-900">YATT</h3>
                 <ul className="mt-6 grid gap-3 leading-7 text-slate-700">
                   {[
@@ -98,13 +98,13 @@ export default function Home() {
                     "Tegishli ko‘rsatmalar berish"
                   ].map((item) => (
                     <li key={item} className="flex gap-3">
-                      <span className="mt-3 h-1.5 w-1.5 shrink-0 rounded-full bg-success-500" />
+                      <span className="mt-3 h-1.5 w-1.5 shrink-0 rounded-full bg-electric-500" />
                       <span>{item}</span>
                     </li>
                   ))}
                 </ul>
               </article>
-              <article className="rounded-lg border border-slate-200 bg-white p-7 shadow-sm">
+              <article className="rounded-lg border border-navy-100 bg-white p-7 shadow-soft">
                 <h3 className="text-2xl font-bold text-navy-900">MCHJ</h3>
                 <ul className="mt-6 grid gap-3 leading-7 text-slate-700">
                   {[
@@ -115,7 +115,7 @@ export default function Home() {
                     "Ro‘yxatdan o‘tgandan keyin hisobga qo‘yish"
                   ].map((item) => (
                     <li key={item} className="flex gap-3">
-                      <span className="mt-3 h-1.5 w-1.5 shrink-0 rounded-full bg-success-500" />
+                      <span className="mt-3 h-1.5 w-1.5 shrink-0 rounded-full bg-electric-500" />
                       <span>{item}</span>
                     </li>
                   ))}
@@ -143,13 +143,13 @@ export default function Home() {
                 <ServiceCategory key={category.title} {...category} />
               ))}
             </div>
-            <p className="mt-8 rounded-lg border border-slate-200 bg-slate-50 p-4 text-center text-sm font-medium text-slate-700">
+            <p className="mt-8 rounded-lg border border-navy-100 bg-navy-50 p-4 text-center text-sm font-semibold text-navy-800 shadow-[0_10px_26px_rgba(10,35,66,0.05)]">
               Narx xizmat hajmi va murakkabligiga qarab kelishiladi.
             </p>
           </div>
         </section>
 
-        <section className="section-padding bg-slate-50">
+        <section className="section-padding bg-navy-50">
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <SectionHeading
               eyebrow="Nega TAXPOINT"
@@ -159,7 +159,7 @@ export default function Home() {
             />
             <div className="mt-12 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
               {whyTaxpoint.map((item) => (
-                <div key={item} className="rounded-lg border border-slate-200 bg-white p-5 font-medium text-navy-900 shadow-sm">
+                <div key={item} className="rounded-lg border border-navy-100 bg-white p-5 font-semibold text-navy-900 shadow-[0_12px_30px_rgba(10,35,66,0.06)] transition hover:-translate-y-1 hover:border-electric-400 hover:shadow-soft">
                   {item}
                 </div>
               ))}
@@ -176,8 +176,8 @@ export default function Home() {
             />
             <div className="mt-12 grid gap-5 md:grid-cols-4">
               {processSteps.map((step, index) => (
-                <article key={step} className="rounded-lg border border-slate-200 bg-white p-6 shadow-sm">
-                  <div className="flex h-10 w-10 items-center justify-center rounded-md bg-navy-900 text-sm font-semibold text-white">
+                <article key={step} className="rounded-lg border border-navy-100 bg-white p-6 shadow-[0_12px_30px_rgba(10,35,66,0.06)] transition hover:-translate-y-1 hover:border-electric-400 hover:shadow-soft">
+                  <div className="flex h-10 w-10 items-center justify-center rounded-md bg-navy-900 text-sm font-semibold text-white shadow-[0_8px_20px_rgba(10,35,66,0.18)]">
                     {index + 1}
                   </div>
                   <h3 className="mt-5 text-lg font-bold leading-7 text-navy-900">{step}</h3>
@@ -187,7 +187,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section id="savollar" className="section-padding bg-slate-50">
+        <section id="savollar" className="section-padding bg-navy-50">
           <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
             <SectionHeading
               eyebrow="Savollar"

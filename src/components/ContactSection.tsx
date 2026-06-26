@@ -10,7 +10,7 @@ import {
 
 export function ContactSection() {
   return (
-    <section id="contact-form" className="section-padding bg-slate-50">
+    <section id="contact-form" className="section-padding bg-white">
       <div className="mx-auto grid max-w-7xl gap-10 px-4 sm:px-6 lg:grid-cols-[0.95fr_1.05fr] lg:items-center lg:px-8">
         <div>
           <p className="text-sm font-bold uppercase tracking-normal text-navy-700">
@@ -19,7 +19,7 @@ export function ContactSection() {
           <h2 className="mt-3 text-3xl font-extrabold tracking-normal text-navy-900 sm:text-4xl">
             Mutaxassis bilan bog‘laning
           </h2>
-          <p className="mt-4 max-w-2xl text-lg leading-8 text-slate-600">
+          <p className="mt-4 max-w-2xl text-lg leading-8 text-slate-700">
             Hisob, soliq yoki ro‘yxatdan o‘tkazish bo‘yicha holatingizni ayting.
             TAXPOINT mutaxassisi mos tarif yoki xizmatni tanlashga yordam beradi.
           </p>
@@ -31,28 +31,28 @@ export function ContactSection() {
           </div>
         </div>
 
-        <div className="rounded-lg border border-navy-100 bg-white p-6 shadow-soft">
+        <div className="rounded-lg border border-navy-100 bg-gradient-to-b from-white to-navy-50 p-6 shadow-soft">
           <div className="grid gap-5 sm:grid-cols-2">
             <div>
-              <p className="text-sm font-bold text-slate-500">Telefon</p>
+              <p className="text-sm font-bold text-navy-700">Telefon</p>
               <PhoneModal className="mt-3 w-full" />
             </div>
 
             <div>
-              <p className="text-sm font-bold text-slate-500">Manzil</p>
-              <p className="mt-3 rounded-md border border-slate-200 bg-slate-50 px-4 py-3 text-sm font-medium leading-6 text-navy-900">
+              <p className="text-sm font-bold text-navy-700">Manzil</p>
+              <p className="mt-3 rounded-md border border-navy-100 bg-white px-4 py-3 text-sm font-semibold leading-6 text-navy-900 shadow-[0_8px_22px_rgba(10,35,66,0.05)]">
                 {address}
               </p>
               <div className="mt-3 grid gap-2">
                 <a
                   href={googleMapsUrl}
-                  className="rounded-md border border-slate-300 bg-white px-4 py-3 text-sm font-bold text-navy-900 transition hover:border-electric-500 hover:bg-navy-50"
+                  className="rounded-md border border-navy-200 bg-white px-4 py-3 text-sm font-bold text-navy-900 shadow-[0_8px_22px_rgba(10,35,66,0.05)] transition hover:border-electric-500 hover:bg-navy-50 hover:shadow-glow"
                 >
                   Google Maps
                 </a>
                 <a
                   href={yandexMapsUrl}
-                  className="rounded-md border border-slate-300 bg-white px-4 py-3 text-sm font-bold text-navy-900 transition hover:border-electric-500 hover:bg-navy-50"
+                  className="rounded-md border border-navy-200 bg-white px-4 py-3 text-sm font-bold text-navy-900 shadow-[0_8px_22px_rgba(10,35,66,0.05)] transition hover:border-electric-500 hover:bg-navy-50 hover:shadow-glow"
                 >
                   Yandex Maps
                 </a>

@@ -15,8 +15,8 @@ type PricingCardProps = {
 export function PricingCard({ plan }: PricingCardProps) {
   return (
     <article
-      className={`relative flex h-full flex-col rounded-lg border bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-soft ${
-        plan.recommended ? "border-electric-500 ring-2 ring-navy-100" : "border-slate-200 hover:border-navy-100"
+      className={`relative flex h-full flex-col rounded-lg border bg-white p-6 shadow-[0_12px_34px_rgba(10,35,66,0.07)] transition hover:-translate-y-1 hover:shadow-soft ${
+        plan.recommended ? "border-electric-500 ring-2 ring-electric-400/20" : "border-navy-100 hover:border-electric-400"
       }`}
     >
       {plan.recommended ? (
@@ -24,18 +24,18 @@ export function PricingCard({ plan }: PricingCardProps) {
           Eng ko‘p tanlanadi
         </span>
       ) : null}
-      <div className="border-b border-slate-200 pb-5">
+      <div className="border-b border-navy-100 pb-5">
         <h3 className="text-2xl font-bold text-navy-900">{plan.name}</h3>
-        <p className="mt-3 min-h-12 text-sm leading-6 text-slate-600">{plan.description}</p>
+        <p className="mt-3 min-h-12 text-sm leading-6 text-slate-700">{plan.description}</p>
       </div>
       <div className="mt-6 min-h-20">
         <span className="block text-3xl font-extrabold leading-tight text-navy-900">{plan.price}</span>
-        <span className="ml-1 text-sm font-medium text-slate-500">{plan.period}</span>
+        <span className="ml-1 text-sm font-medium text-slate-600">{plan.period}</span>
       </div>
       <ul className="mt-2 grid gap-3 text-sm leading-6 text-slate-700">
         {plan.features.map((feature) => (
           <li key={feature} className="flex gap-3">
-            <span className="mt-2 flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-navy-50 text-[11px] font-semibold text-electric-600">
+            <span className="mt-2 flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-navy-100 text-[11px] font-semibold text-electric-600">
               ✓
             </span>
             <span>{feature}</span>

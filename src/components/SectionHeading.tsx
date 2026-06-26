@@ -14,7 +14,7 @@ export function SectionHeading({
   return (
     <div className={align === "center" ? "mx-auto max-w-3xl text-center" : "max-w-3xl"}>
       {eyebrow ? (
-        <p className="mb-3 text-sm font-bold uppercase tracking-normal text-navy-700">
+        <p className="mb-3 text-sm font-extrabold uppercase tracking-normal text-electric-600">
           {eyebrow}
         </p>
       ) : null}
@@ -22,7 +22,7 @@ export function SectionHeading({
         {title}
       </h2>
       {description ? (
-        <p className="mt-4 text-base leading-7 text-slate-600 sm:text-lg">{description}</p>
+        <p className="mt-4 text-base leading-7 text-slate-700 sm:text-lg">{description}</p>
       ) : null}
     </div>
   );

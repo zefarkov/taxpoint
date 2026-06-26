@@ -20,8 +20,8 @@ export function TelegramButton({
         compact ? "h-10 w-10 p-0" : "min-h-11 px-4 py-3"
       } ${
         inverted
-          ? "border-white/30 bg-transparent text-white hover:bg-white/10"
-          : "border-slate-300 bg-white text-navy-900 hover:border-electric-500 hover:bg-navy-50"
+          ? "border-white/30 bg-white/10 text-white hover:border-electric-400 hover:bg-white/15 hover:shadow-glow"
+          : "border-navy-200 bg-white text-navy-900 hover:border-electric-500 hover:bg-navy-50 hover:shadow-glow"
       } ${className}`}
       aria-label={label ? undefined : "Telegram orqali yozish"}
     >
