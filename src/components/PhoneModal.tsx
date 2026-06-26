@@ -84,15 +84,27 @@ export function PhoneModal({ className = "" }: PhoneModalProps) {
         ref={triggerRef}
         type="button"
         onClick={openModal}
-        className={`pulse-phone inline-flex min-h-11 items-center justify-center rounded-md border border-slate-300 bg-white px-4 py-3 text-sm font-bold text-navy-900 shadow-sm transition hover:border-electric-500 hover:bg-navy-50 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-navy-700 ${className}`}
+        className={`pulse-phone inline-flex min-h-11 items-center justify-center gap-2 rounded-md border border-slate-300 bg-white px-4 py-3 text-sm font-bold text-navy-900 shadow-sm transition hover:border-electric-500 hover:bg-navy-50 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-navy-700 ${className}`}
         aria-haspopup="dialog"
       >
+        <svg
+          aria-hidden="true"
+          viewBox="0 0 24 24"
+          className="h-4 w-4"
+          fill="none"
+          stroke="currentColor"
+          strokeWidth="2"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        >
+          <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.12.91.33 1.8.63 2.65a2 2 0 0 1-.45 2.11L8 9.77a16 16 0 0 0 6.23 6.23l1.29-1.29a2 2 0 0 1 2.11-.45c.85.3 1.74.51 2.65.63A2 2 0 0 1 22 16.92z" />
+        </svg>
         Qo‘ng‘iroq qilish
       </button>
 
       {isMounted ? (
         <div
-          className={`fixed inset-0 z-[110] flex items-center justify-center bg-navy-900/45 px-4 py-6 backdrop-blur-sm transition-opacity duration-200 motion-reduce:transition-none ${
+          className={`fixed inset-0 z-[110] grid place-items-center bg-navy-900/50 px-4 py-6 backdrop-blur-sm transition-opacity duration-200 motion-reduce:transition-none ${
             isOpen ? "opacity-100" : "opacity-0"
           }`}
           onMouseDown={(event) => {
@@ -135,7 +147,7 @@ export function PhoneModal({ className = "" }: PhoneModalProps) {
                 <a
                   key={phone.href}
                   href={phone.href}
-                  className="pulse-phone group flex min-h-16 items-center gap-4 rounded-lg border border-slate-200 bg-slate-50 p-4 text-left shadow-sm transition hover:-translate-y-0.5 hover:border-electric-500 hover:bg-white hover:shadow-soft focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-navy-700"
+                  className="pulse-phone group flex min-h-16 items-center gap-4 rounded-lg border border-slate-200 bg-slate-50 p-4 text-left shadow-[0_8px_24px_rgba(11,31,58,0.06)] transition hover:-translate-y-0.5 hover:border-electric-500 hover:bg-white hover:shadow-[0_0_0_4px_rgba(11,124,255,0.13),0_16px_36px_rgba(11,31,58,0.12)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-navy-700"
                 >
                   <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-md bg-navy-900 text-white transition group-hover:bg-electric-500">
                     <svg

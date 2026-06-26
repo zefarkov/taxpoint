@@ -1,5 +1,5 @@
 import { ButtonLink } from "@/components/ButtonLink";
-import { telegramUrl } from "@/data/site";
+import { TelegramButton } from "@/components/TelegramButton";
 
 const quickLinks = [
   { label: "Tariflar", href: "/#tariflar" },
@@ -42,9 +42,7 @@ export default function NotFound() {
               <ButtonLink href="/#bosh-sahifa" variant="secondary">
                 Bosh sahifaga qaytish
               </ButtonLink>
-              <ButtonLink href={telegramUrl} variant="outline">
-                Telegram orqali bog‘lanish
-              </ButtonLink>
+              <TelegramButton label="Telegram orqali bog‘lanish" />
             </div>
 
             <nav className="mt-10 flex flex-wrap gap-3" aria-label="Foydali havolalar">

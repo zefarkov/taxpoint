@@ -60,11 +60,11 @@ export function ClientsSection() {
           </div>
         ) : null}
 
-        <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-5">
+        <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-6">
           {clientCategories.map((category) => (
             <article
               key={category}
-              className="rounded-lg border border-slate-200 bg-slate-50 p-5 text-center shadow-sm transition hover:-translate-y-1 hover:border-navy-200 hover:bg-white hover:shadow-soft"
+              className="flex min-h-24 items-center justify-center rounded-lg border border-slate-200 bg-slate-50 p-5 text-center shadow-sm transition hover:-translate-y-1 hover:border-electric-500 hover:bg-white hover:shadow-soft"
             >
               <h3 className="text-base font-bold leading-6 text-navy-900">{category}</h3>
             </article>

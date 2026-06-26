@@ -11,12 +11,11 @@ export const googleMapsUrl = "https://maps.app.goo.gl/7TM91pP6ZaUT33HB6";
 export const yandexMapsUrl = "https://yandex.uz/maps/-/CTQpuB11";
 
 export const navItems = [
-  { label: "Bosh sahifa", href: "/#bosh-sahifa" },
+  { label: "Asosiy", href: "/#bosh-sahifa" },
   { label: "Tariflar", href: "/#tariflar" },
   { label: "Xizmatlar", href: "/#xizmatlar" },
   { label: "Ro‘yxatdan o‘tkazish", href: "/#royxatdan-otkazish" },
-  { label: "Savollar", href: "/#savollar" },
-  { label: "Aloqa", href: "/#aloqa" }
+  { label: "Savollar", href: "/#savollar" }
 ];
 
 export const pricingPlans = [

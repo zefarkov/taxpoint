@@ -1,6 +1,7 @@
 import { ButtonLink } from "@/components/ButtonLink";
 import { PhoneModal } from "@/components/PhoneModal";
-import { consultationHref, telegramUrl } from "@/data/site";
+import { TelegramButton } from "@/components/TelegramButton";
+import { consultationHref } from "@/data/site";
 
 const trustPoints = [
   "Hisobotlar vaqtida topshiriladi",
@@ -32,12 +33,7 @@ export function Hero() {
             </ButtonLink>
           </div>
           <div className="mt-3 flex flex-wrap gap-2">
-            <a
-              href={telegramUrl}
-              className="pulse-telegram inline-flex min-h-10 items-center justify-center rounded-md border border-slate-300 bg-white px-4 text-sm font-semibold text-navy-900 shadow-sm transition hover:border-electric-500 hover:bg-navy-50"
-            >
-              Telegram
-            </a>
+            <TelegramButton label="Telegram" className="min-h-10 px-4 py-2" />
             <PhoneModal className="min-h-10 px-4 py-2" />
           </div>
           <div className="mt-10 grid gap-3 sm:grid-cols-3">

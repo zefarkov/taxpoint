@@ -1,10 +1,10 @@
 import { PhoneModal } from "@/components/PhoneModal";
+import { TelegramButton } from "@/components/TelegramButton";
 import {
   address,
   googleMapsUrl,
   navItems,
   telegramLabel,
-  telegramUrl,
   yandexMapsUrl
 } from "@/data/site";
 
@@ -38,10 +38,10 @@ export function Footer() {
         </nav>
         <div className="text-sm leading-7 text-slate-600">
           <p className="font-semibold text-navy-900">Aloqa</p>
-          <PhoneModal className="mt-3 w-full justify-center sm:w-auto" />
-          <p>
-            Telegram: <a href={telegramUrl} className="font-medium text-navy-900 hover:text-electric-600">{telegramLabel}</a>
-          </p>
+          <div className="mt-3 flex flex-wrap gap-2">
+            <PhoneModal className="min-h-10 px-3 py-2" />
+            <TelegramButton label={telegramLabel} className="min-h-10 px-3 py-2" />
+          </div>
           <p>Ish vaqti: Dushanba - Shanba, 09:00 - 18:00</p>
           <p>Manzil: {address}</p>
           <div className="mt-3 flex flex-wrap gap-2">

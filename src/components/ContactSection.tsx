@@ -1,10 +1,10 @@
 import { ButtonLink } from "@/components/ButtonLink";
 import { PhoneModal } from "@/components/PhoneModal";
+import { TelegramButton } from "@/components/TelegramButton";
 import {
   address,
   consultationHref,
   googleMapsUrl,
-  telegramUrl,
   yandexMapsUrl
 } from "@/data/site";
 
@@ -27,9 +27,7 @@ export function ContactSection() {
             <ButtonLink href={consultationHref} variant="secondary">
               Konsultatsiya olish
             </ButtonLink>
-            <ButtonLink href={telegramUrl} variant="outline">
-              Telegram orqali yozish
-            </ButtonLink>
+            <TelegramButton label="Telegram orqali yozish" />
           </div>
         </div>
 

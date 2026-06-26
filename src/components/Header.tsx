@@ -1,11 +1,12 @@
 import { ButtonLink } from "@/components/ButtonLink";
 import { PhoneModal } from "@/components/PhoneModal";
-import { consultationHref, navItems, telegramUrl } from "@/data/site";
+import { TelegramButton } from "@/components/TelegramButton";
+import { consultationHref, navItems } from "@/data/site";
 
 export function Header() {
   return (
     <header className="sticky top-0 z-50 border-b border-slate-200 bg-white/95 backdrop-blur">
-      <div className="mx-auto flex max-w-7xl items-center justify-between gap-5 px-4 py-4 sm:px-6 lg:px-8">
+      <div className="mx-auto flex max-w-7xl items-center justify-between gap-4 px-4 py-3 sm:px-6 lg:px-8">
         <a
           href="/#bosh-sahifa"
           className="flex shrink-0 items-center rounded-md py-1 pr-2 transition hover:opacity-90"
@@ -14,11 +15,11 @@ export function Header() {
           <img
             src="/brand/logo-main-horizontal.png"
             alt="TAXPOINT"
-            className="h-12 w-auto max-w-[205px] object-contain sm:h-14 sm:max-w-[250px] lg:h-16 lg:max-w-[285px]"
+            className="h-11 w-auto max-w-[190px] object-contain sm:h-12 sm:max-w-[225px] lg:h-14 lg:max-w-[255px]"
           />
         </a>
 
-        <nav className="hidden items-center gap-6 text-[15px] font-semibold text-slate-700 xl:flex">
+        <nav className="hidden items-center gap-5 text-[15px] font-semibold text-slate-700 xl:flex">
           {navItems.map((item) => (
             <a key={item.href} href={item.href} className="transition hover:text-navy-800">
               {item.label}
@@ -27,17 +28,11 @@ export function Header() {
         </nav>
 
         <div className="hidden items-center gap-2 lg:flex">
-          <ButtonLink href={consultationHref} variant="secondary" className="px-4">
+          <ButtonLink href={consultationHref} variant="secondary" className="h-10 min-h-0 px-4 py-0">
             Konsultatsiya olish
           </ButtonLink>
-          <a
-            href={telegramUrl}
-            className="pulse-telegram inline-flex h-11 items-center justify-center rounded-md border border-slate-300 bg-white px-3 text-sm font-semibold text-navy-900 shadow-sm transition hover:border-electric-500 hover:bg-navy-50"
-            aria-label="Telegram orqali yozish"
-          >
-            TG
-          </a>
-          <PhoneModal className="h-11 min-h-0 px-3 py-0" />
+          <TelegramButton compact />
+          <PhoneModal className="h-10 min-h-0 px-3 py-0" />
         </div>
 
         <details className="group relative xl:hidden">
@@ -61,12 +56,7 @@ export function Header() {
               Konsultatsiya olish
             </ButtonLink>
             <div className="mt-2 grid grid-cols-2 gap-2">
-              <a
-                href={telegramUrl}
-                className="pulse-telegram inline-flex min-h-11 items-center justify-center rounded-md border border-slate-300 bg-white px-3 text-sm font-semibold text-navy-900 transition hover:bg-navy-50"
-              >
-                Telegram
-              </a>
+              <TelegramButton label="Telegram" />
               <PhoneModal className="w-full px-3" />
             </div>
           </div>

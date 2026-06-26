@@ -1,6 +1,7 @@
 import { ButtonLink } from "@/components/ButtonLink";
 import { PhoneModal } from "@/components/PhoneModal";
-import { consultationHref, telegramUrl } from "@/data/site";
+import { TelegramButton } from "@/components/TelegramButton";
+import { consultationHref } from "@/data/site";
 
 export function CTA() {
   return (
@@ -20,12 +21,7 @@ export function CTA() {
           <ButtonLink href="#tariflar" variant="outline" className="border-white/30 bg-white text-navy-900 hover:bg-navy-50">
             Tariflarni ko‘rish
           </ButtonLink>
-          <a
-            href={telegramUrl}
-            className="pulse-telegram inline-flex min-h-11 items-center justify-center rounded-md border border-white/30 px-4 py-3 text-sm font-bold text-white transition hover:bg-white/10"
-          >
-            Telegram
-          </a>
+          <TelegramButton label="Telegram" inverted />
           <PhoneModal className="border-white/30 bg-transparent text-white hover:bg-white/10 sm:min-w-40" />
         </div>
       </div>

@@ -1,9 +1,10 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { ButtonLink } from "@/components/ButtonLink";
+import { TelegramButton } from "@/components/TelegramButton";
 import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";
-import { consultationHref, seoServices, telegramUrl } from "@/data/site";
+import { consultationHref, seoServices } from "@/data/site";
 
 type PageProps = {
   params: Promise<{ slug: string }>;
@@ -72,9 +73,7 @@ export default async function ServicePage({ params }: PageProps) {
             </div>
             <div className="mt-10 flex flex-col gap-3 sm:flex-row">
               <ButtonLink href={consultationHref}>Konsultatsiya olish</ButtonLink>
-              <ButtonLink href={telegramUrl} variant="outline">
-                Telegram
-              </ButtonLink>
+              <TelegramButton label="Telegram" />
               <ButtonLink href="/#tariflar" variant="outline">
                 Tariflarni ko‘rish
               </ButtonLink>
