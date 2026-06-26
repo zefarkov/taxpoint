@@ -31,23 +31,23 @@ Next.js is configured with `output: "export"`, so the production files are writt
 
 ## Telegram lead forms
 
-All main CTA buttons open a short lead form. The static frontend sends lead data to a Cloudflare Worker, and the Worker sends the Telegram notification securely.
+All main CTA buttons open a short lead form. The static frontend sends lead data to an ENDPOINT, and the Worker sends the Telegram notification securely.
 
 Frontend environment variable:
 
 ```bash
-NEXT_PUBLIC_LEAD_ENDPOINT=https://YOUR-WORKER.YOUR-SUBDOMAIN.workers.dev
+NEXT_PUBLIC_LEAD_ENDPOINT=
 ```
 
-Do not use `NEXT_PUBLIC_TELEGRAM_BOT_TOKEN` or expose Telegram credentials in the frontend. The Worker keeps these values as secrets:
+Do not use `NEXT_PUBLIC_TELEGRAM_BOT_TOKEN` or expose Telegram credentials in the frontend. The ENDPOINT keeps these values as secrets:
 
 ```bash
 TELEGRAM_BOT_TOKEN
 TELEGRAM_CHAT_ID
-ALLOWED_ORIGIN=https://taxpoint.uz
+ALLOWED_ORIGIN
 ```
 
-Worker source and setup instructions are in `cloudflare-worker/`.
+`.
 
 ## Deploy through GitHub Pages
 
@@ -63,11 +63,11 @@ This project does not use API routes, server actions, or server-side rendering r
 
 Current contact values:
 
-- Phone: `+998 93 045 37 36`, `+998 94 444 63 33`, `+998 50 009 00 50`
-- Telegram link: `https://t.me/+998930453736`
-- Address: `Farg'ona shahar, Mustaqillik ko'chasi 193-uy`
-- Google Maps: `https://maps.app.goo.gl/HaSTYUr6S11YeiVq5`
-- Yandex Maps: `https://yandex.uz/maps/-/CTQpuB11`
+- Phone: ``, ``, ``
+- Telegram link: ``
+- Address: ``
+- Google Maps: ``
+- Yandex Maps: ``
 - Production domain in `src/app/layout.tsx`, `public/sitemap.xml`, and `public/robots.txt`
 
 ## Client logos
