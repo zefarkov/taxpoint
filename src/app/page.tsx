@@ -1,5 +1,6 @@
 import { CTA } from "@/components/CTA";
 import { ClientsSection } from "@/components/ClientsSection";
+import { ContactSection } from "@/components/ContactSection";
 import { FAQ } from "@/components/FAQ";
 import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";
@@ -8,7 +9,7 @@ import { PricingCard } from "@/components/PricingCard";
 import { SectionHeading } from "@/components/SectionHeading";
 import { ServiceCategory } from "@/components/ServiceCategory";
 import { TrustMetrics } from "@/components/TrustMetrics";
-import { faqs, pricingPlans, serviceCategories, telegramUrl } from "@/data/site";
+import { consultationHref, faqs, pricingPlans, serviceCategories } from "@/data/site";
 import { ButtonLink } from "@/components/ButtonLink";
 
 const problems = [
@@ -122,7 +123,7 @@ export default function Home() {
               </article>
             </div>
             <div className="mt-10 text-center">
-              <ButtonLink href={telegramUrl}>
+              <ButtonLink href={consultationHref}>
                 Ro‘yxatdan o‘tkazish bo‘yicha maslahat olish
               </ButtonLink>
             </div>
@@ -202,6 +203,7 @@ export default function Home() {
           </div>
         </section>
 
+        <ContactSection />
         <CTA />
       </main>
       <Footer />

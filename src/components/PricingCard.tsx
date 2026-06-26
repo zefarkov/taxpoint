@@ -1,5 +1,5 @@
 import { ButtonLink } from "@/components/ButtonLink";
-import { telegramUrl } from "@/data/site";
+import { consultationHref } from "@/data/site";
 
 type PricingCardProps = {
   plan: {
@@ -16,11 +16,11 @@ export function PricingCard({ plan }: PricingCardProps) {
   return (
     <article
       className={`relative flex h-full flex-col rounded-lg border bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-soft ${
-        plan.recommended ? "border-navy-800 ring-2 ring-navy-100" : "border-slate-200"
+        plan.recommended ? "border-electric-500 ring-2 ring-navy-100" : "border-slate-200 hover:border-navy-100"
       }`}
     >
       {plan.recommended ? (
-        <span className="absolute right-5 top-5 rounded-md bg-success-500 px-3 py-1 text-xs font-semibold text-white shadow-sm">
+        <span className="absolute right-5 top-5 rounded-md bg-electric-500 px-3 py-1 text-xs font-semibold text-white shadow-sm">
           Eng ko‘p tanlanadi
         </span>
       ) : null}
@@ -35,14 +35,14 @@ export function PricingCard({ plan }: PricingCardProps) {
       <ul className="mt-2 grid gap-3 text-sm leading-6 text-slate-700">
         {plan.features.map((feature) => (
           <li key={feature} className="flex gap-3">
-            <span className="mt-2 flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-navy-50 text-[11px] font-semibold text-success-600">
+            <span className="mt-2 flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-navy-50 text-[11px] font-semibold text-electric-600">
               ✓
             </span>
             <span>{feature}</span>
           </li>
         ))}
       </ul>
-      <ButtonLink href={telegramUrl} variant={plan.recommended ? "primary" : "outline"} className="mt-8 w-full">
+      <ButtonLink href={consultationHref} variant={plan.recommended ? "primary" : "outline"} className="mt-8 w-full">
         Mutaxassis bilan gaplashish
       </ButtonLink>
     </article>

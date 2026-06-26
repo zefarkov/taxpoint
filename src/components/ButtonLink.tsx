@@ -12,9 +12,9 @@ const variants = {
   primary:
     "bg-success-500 text-white shadow-sm hover:bg-success-600 focus-visible:outline-success-500",
   secondary:
-    "bg-navy-900 text-white shadow-sm hover:bg-navy-800 focus-visible:outline-navy-700",
+    "bg-navy-900 text-white shadow-sm hover:bg-navy-700 focus-visible:outline-navy-700",
   outline:
-    "border border-slate-300 bg-white text-navy-900 hover:border-navy-700 hover:bg-navy-50 focus-visible:outline-navy-700"
+    "border border-slate-300 bg-white text-navy-900 hover:border-electric-500 hover:bg-navy-50 focus-visible:outline-navy-700"
 };
 
 export function ButtonLink({

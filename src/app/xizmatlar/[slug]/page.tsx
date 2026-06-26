@@ -3,7 +3,7 @@ import { notFound } from "next/navigation";
 import { ButtonLink } from "@/components/ButtonLink";
 import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";
-import { seoServices, telegramUrl } from "@/data/site";
+import { consultationHref, seoServices, telegramUrl } from "@/data/site";
 
 type PageProps = {
   params: Promise<{ slug: string }>;
@@ -71,7 +71,10 @@ export default async function ServicePage({ params }: PageProps) {
               </ul>
             </div>
             <div className="mt-10 flex flex-col gap-3 sm:flex-row">
-              <ButtonLink href={telegramUrl}>Telegramda maslahat olish</ButtonLink>
+              <ButtonLink href={consultationHref}>Konsultatsiya olish</ButtonLink>
+              <ButtonLink href={telegramUrl} variant="outline">
+                Telegram
+              </ButtonLink>
               <ButtonLink href="/#tariflar" variant="outline">
                 Tariflarni ko‘rish
               </ButtonLink>

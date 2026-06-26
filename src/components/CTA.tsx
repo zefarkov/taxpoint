@@ -1,5 +1,5 @@
 import { ButtonLink } from "@/components/ButtonLink";
-import { telegramUrl } from "@/data/site";
+import { consultationHref, phoneNumbers, telegramUrl } from "@/data/site";
 
 export function CTA() {
   return (
@@ -15,10 +15,22 @@ export function CTA() {
           </p>
         </div>
         <div className="flex w-full flex-col gap-3 sm:w-auto sm:flex-row">
-          <ButtonLink href={telegramUrl}>Telegramda maslahat olish</ButtonLink>
+          <ButtonLink href={consultationHref}>Konsultatsiya olish</ButtonLink>
           <ButtonLink href="#tariflar" variant="outline" className="border-white/30 bg-white text-navy-900 hover:bg-navy-50">
             Tariflarni ko‘rish
           </ButtonLink>
+          <a
+            href={telegramUrl}
+            className="inline-flex min-h-11 items-center justify-center rounded-md border border-white/30 px-4 py-3 text-sm font-semibold text-white transition hover:bg-white/10"
+          >
+            Telegram
+          </a>
+          <a
+            href={phoneNumbers[0].href}
+            className="inline-flex min-h-11 items-center justify-center rounded-md border border-white/30 px-4 py-3 text-sm font-semibold text-white transition hover:bg-white/10"
+          >
+            Qo‘ng‘iroq
+          </a>
         </div>
       </div>
     </section>

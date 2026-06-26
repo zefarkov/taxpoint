@@ -8,10 +8,15 @@ const config: Config = {
         navy: {
           50: "#eef4ff",
           100: "#dce9ff",
+          500: "#0d6eea",
           600: "#1d4f91",
           700: "#163f75",
           800: "#12345f",
           900: "#0b1f3a"
+        },
+        electric: {
+          500: "#0b7cff",
+          600: "#005fce"
         },
         success: {
           500: "#168a4a",

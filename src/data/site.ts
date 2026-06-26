@@ -1,6 +1,14 @@
-export const phoneNumber = "+998930453736";
+export const phoneNumbers = [
+  { label: "+998 93 045 37 36", href: "tel:+998930453736" },
+  { label: "+998 94 444 63 33", href: "tel:+998944446333" },
+  { label: "+998 50 009 00 50", href: "tel:+998500090050" }
+];
 export const telegramUrl = "https://t.me/+998930453736";
 export const telegramLabel = "Telegram orqali yozish";
+export const consultationHref = "/#contact-form";
+export const address = "Farg'ona shahar, Mustaqillik ko'chasi 193-uy";
+export const googleMapsUrl = "https://maps.app.goo.gl/HaSTYUr6S11YeiVq5";
+export const yandexMapsUrl = "https://yandex.uz/maps/-/CTQpuB11";
 
 export const navItems = [
   { label: "Bosh sahifa", href: "/#bosh-sahifa" },
@@ -154,18 +162,19 @@ export const faqs = [
 ];
 
 export const trustMetrics = [
-  { value: "50+", label: "mijoz" },
-  { value: "300+", label: "topshirilgan hisobot" },
-  { value: "5+", label: "yil tajriba" },
-  { value: "100+", label: "ro‘yxatdan o‘tgan biznes" }
+  { value: "40+", label: "mijoz" },
+  { value: "200+", label: "topshirilgan hisobot" },
+  { value: "4+", label: "yil tajriba" },
+  { value: "50+", label: "ro‘yxatdan o‘tgan biznes" }
 ];
 
 export const clientCategories = [
-  "Savdo kompaniyalari",
-  "Xizmat ko‘rsatish bizneslari",
-  "Import va eksport kompaniyalari",
-  "Qurilish kompaniyalari",
-  "Startap va yangi bizneslar"
+  "Ulgurji savdo",
+  "Chakana savdo",
+  "Xizmat ko'rsatish",
+  "Ishlab chiqarish",
+  "Fermer xo'jaligi",
+  "Import va eksport kompaniyalari"
 ];
 
 export const seoServices = [

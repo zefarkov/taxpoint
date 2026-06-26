@@ -43,9 +43,11 @@ This project does not use API routes, server actions, or server-side rendering r
 
 Current contact values:
 
-- Phone: `+998930453736`
+- Phone: `+998 93 045 37 36`, `+998 94 444 63 33`, `+998 50 009 00 50`
 - Telegram link: `https://t.me/+998930453736`
-- Address: `Toshkent, O‘zbekiston`
+- Address: `Farg'ona shahar, Mustaqillik ko'chasi 193-uy`
+- Google Maps: `https://maps.app.goo.gl/HaSTYUr6S11YeiVq5`
+- Yandex Maps: `https://yandex.uz/maps/-/CTQpuB11`
 - Production domain in `src/app/layout.tsx`, `public/sitemap.xml`, and `public/robots.txt`
 
 ## Client logos
