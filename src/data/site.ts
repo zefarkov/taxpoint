@@ -160,17 +160,6 @@ export const trustMetrics = [
   { value: "100+", label: "ro‘yxatdan o‘tgan biznes" }
 ];
 
-export const clientLogoPlaceholders = [
-  "Savdo",
-  "Xizmat",
-  "Import",
-  "Qurilish",
-  "Startap",
-  "Eksport",
-  "Retail",
-  "Servis"
-];
-
 export const clientCategories = [
   "Savdo kompaniyalari",
   "Xizmat ko‘rsatish bizneslari",

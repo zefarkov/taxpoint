@@ -48,6 +48,10 @@ Current contact values:
 - Address: `Toshkent, O‘zbekiston`
 - Production domain in `src/app/layout.tsx`, `public/sitemap.xml`, and `public/robots.txt`
 
+## Client logos
+
+Add client logo PNG files to `public/clients/`. The "Biz bilan ishlayotganlar" marquee reads all `.png` files from that folder during build, so new logos will appear after the next deploy.
+
 ## SEO service URLs
 
 The site includes SEO-ready service routes:
