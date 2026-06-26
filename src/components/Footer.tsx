@@ -63,6 +63,13 @@ export function Footer() {
 
           <div className="mt-5 grid gap-3">
             <p className="flex items-start gap-3">
+              <span aria-hidden="true" className="mt-0.5 text-electric-400">📞</span>
+              <span>
+                <span className="block text-xs font-bold uppercase text-white/70">Aloqa</span>
+                Qo'ng'iroq qilish tugmasi orqali raqam tanlang
+              </span>
+            </p>
+            <p className="flex items-start gap-3">
               <span aria-hidden="true" className="mt-0.5 text-electric-400">🕒</span>
               <span>
                 <span className="block text-xs font-bold uppercase text-white/70">Ish vaqti</span>
@@ -81,12 +88,16 @@ export function Footer() {
           <div className="mt-4 flex flex-wrap gap-2">
             <a
               href={googleMapsUrl}
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-flex min-h-9 items-center rounded-md border border-white/15 px-3 py-1.5 text-xs font-bold text-white transition hover:border-electric-400 hover:bg-white/10 hover:text-electric-400 hover:shadow-glow"
             >
               Google Maps
             </a>
             <a
               href={yandexMapsUrl}
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-flex min-h-9 items-center rounded-md border border-white/15 px-3 py-1.5 text-xs font-bold text-white transition hover:border-electric-400 hover:bg-white/10 hover:text-electric-400 hover:shadow-glow"
             >
               Yandex Maps
@@ -97,10 +108,10 @@ export function Footer() {
 
       <div className="relative border-t border-white/10 px-4 py-5 text-center">
         <p className="text-sm font-semibold text-navy-100">
-          © 2026 TAXPOINT • Tizimli buxgalteriya va soliq nazorati
+          © 2026 TAXPOINT • Barcha huquqlar himoyalangan
         </p>
         <p className="mt-1 text-xs font-medium text-white/45">
-          Barcha huquqlar himoyalangan
+          Tizimli buxgalteriya va soliq nazorati
         </p>
       </div>
     </footer>

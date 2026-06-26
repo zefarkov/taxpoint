@@ -16,6 +16,8 @@ export function TelegramButton({
   return (
     <a
       href={telegramUrl}
+      target="_blank"
+      rel="noopener noreferrer"
       className={`pulse-telegram inline-flex items-center justify-center gap-2 rounded-md border text-sm font-bold shadow-sm transition focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-navy-700 ${
         compact ? "h-10 w-10 p-0" : "min-h-11 px-4 py-3"
       } ${
