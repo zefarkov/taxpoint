@@ -54,6 +54,10 @@ body {
   animation: fade-in-soft 520ms ease-out both;
 }
 
+.preloader-safe-hide {
+  animation: preloader-safe-hide 1.7s ease-out forwards;
+}
+
 .pulse-cta {
   animation: pulse-cta 3.4s ease-in-out infinite;
 }
@@ -139,6 +143,19 @@ body {
   }
 }
 
+@keyframes preloader-safe-hide {
+  0%,
+  82% {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
   .marquee-track {
     animation: none;
@@ -146,6 +163,10 @@ body {
 
   .fade-in-soft {
     animation: none;
+  }
+
+  .preloader-safe-hide {
+    animation: preloader-safe-hide 1ms linear forwards;
   }
 
   .pulse-cta,
