@@ -50,6 +50,10 @@ body {
   animation-play-state: paused;
 }
 
+.fade-in-soft {
+  animation: fade-in-soft 520ms ease-out both;
+}
+
 @keyframes marquee {
   from {
     transform: translateX(0);
@@ -60,8 +64,24 @@ body {
   }
 }
 
+@keyframes fade-in-soft {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
   .marquee-track {
+    animation: none;
+  }
+
+  .fade-in-soft {
     animation: none;
   }
 }
