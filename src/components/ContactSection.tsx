@@ -41,7 +41,7 @@ export function ContactSection() {
                 <div className="mt-6 grid gap-3 sm:grid-cols-2 lg:grid-cols-1 xl:grid-cols-2">
                   <a
                     href={googleMapsUrl}
-                    className="inline-flex min-h-11 items-center justify-center rounded-md border border-white/20 bg-white px-4 py-3 text-sm font-extrabold text-navy-900 shadow-[0_10px_24px_rgba(0,0,0,0.14)] transition hover:border-electric-400 hover:bg-navy-50 hover:shadow-glow focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-electric-400"
+                    className="inline-flex min-h-11 items-center justify-center rounded-md border border-white/20 bg-white/10 px-4 py-3 text-sm font-extrabold text-white transition hover:border-electric-400 hover:bg-white/15 hover:shadow-glow focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-electric-400"
                   >
                     Google Maps
                   </a>
@@ -52,11 +52,6 @@ export function ContactSection() {
                     Yandex Maps
                   </a>
                 </div>
-              </div>
-              <div className="mt-5 rounded-xl border border-white/10 bg-white/[0.05] p-5">
-                <p className="text-sm font-semibold leading-6 text-navy-100">
-                  Telefon raqamlar to'g'ridan-to'g'ri ko'rsatilmaydi. Qo'ng'iroq tugmasi orqali qulay raqamni tanlang.
-                </p>
               </div>
             </div>
           </div>
