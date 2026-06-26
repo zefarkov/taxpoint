@@ -63,13 +63,6 @@ export function Footer() {
 
           <div className="mt-5 grid gap-3">
             <p className="flex items-start gap-3">
-              <span aria-hidden="true" className="mt-0.5 text-electric-400">📞</span>
-              <span>
-                <span className="block text-xs font-bold uppercase text-white/70">Aloqa</span>
-                Qo'ng'iroq qilish tugmasi orqali raqam tanlang
-              </span>
-            </p>
-            <p className="flex items-start gap-3">
               <span aria-hidden="true" className="mt-0.5 text-electric-400">🕒</span>
               <span>
                 <span className="block text-xs font-bold uppercase text-white/70">Ish vaqti</span>
@@ -108,10 +101,10 @@ export function Footer() {
 
       <div className="relative border-t border-white/10 px-4 py-5 text-center">
         <p className="text-sm font-semibold text-navy-100">
-          © 2026 TAXPOINT • Barcha huquqlar himoyalangan
+          © 2026 TAXPOINT • Tizimli buxgalteriya va soliq nazorati
         </p>
         <p className="mt-1 text-xs font-medium text-white/45">
-          Tizimli buxgalteriya va soliq nazorati
+          Barcha huquqlar himoyalangan
         </p>
       </div>
     </footer>
