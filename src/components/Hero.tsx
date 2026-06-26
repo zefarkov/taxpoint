@@ -22,7 +22,8 @@ export function Hero() {
           <p className="mt-6 max-w-2xl text-lg leading-8 text-slate-700">
             TAXPOINT biznesingiz uchun buxgalteriya hisobi, soliq hisobotlari,
             YATT va MCHJ ro‘yxatdan o‘tkazish hamda elektron tizimlarni sozlash
-            xizmatlarini taqdim etadi.
+            xizmatlarini taqdim etadi. Farg'ona buxgalteriya xizmatlari bo'yicha
+            tadbirkorlarga tartibli va xavfsiz yechim taklif qilamiz.
           </p>
           <div className="mt-8 grid gap-3 sm:flex sm:flex-wrap">
             <LeadFormModal context="KONSULTATSIYA" variant="secondary" className="w-full sm:w-auto sm:min-w-48">
@@ -62,7 +63,7 @@ export function Hero() {
           </div>
           <div className="mt-6 grid grid-cols-2 gap-3 border-t border-navy-100 pt-6">
             <div>
-              <p className="text-2xl font-extrabold text-navy-900">4 xil</p>
+              <p className="text-2xl font-extrabold text-navy-900">4</p>
               <p className="mt-1 text-xs font-medium text-slate-500">oylik tarif</p>
             </div>
             <div>
