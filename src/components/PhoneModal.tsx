@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
+import { createPortal } from "react-dom";
 import { phoneNumbers } from "@/data/site";
 
 type PhoneModalProps = {
@@ -78,31 +79,8 @@ export function PhoneModal({ className = "" }: PhoneModalProps) {
     };
   }, [isMounted]);
 
-  return (
-    <>
-      <button
-        ref={triggerRef}
-        type="button"
-        onClick={openModal}
-        className={`pulse-phone inline-flex min-h-11 items-center justify-center gap-2 rounded-md border border-navy-200 bg-white px-4 py-3 text-sm font-bold text-navy-900 shadow-[0_8px_22px_rgba(10,35,66,0.06)] transition hover:border-electric-500 hover:bg-navy-50 hover:shadow-glow focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-navy-700 ${className}`}
-        aria-haspopup="dialog"
-      >
-        <svg
-          aria-hidden="true"
-          viewBox="0 0 24 24"
-          className="h-4 w-4"
-          fill="none"
-          stroke="currentColor"
-          strokeWidth="2"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-        >
-          <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.12.91.33 1.8.63 2.65a2 2 0 0 1-.45 2.11L8 9.77a16 16 0 0 0 6.23 6.23l1.29-1.29a2 2 0 0 1 2.11-.45c.85.3 1.74.51 2.65.63A2 2 0 0 1 22 16.92z" />
-        </svg>
-        Qo‘ng‘iroq qilish
-      </button>
-
-      {isMounted ? (
+  const modal = isMounted
+    ? createPortal(
         <div
           className={`fixed inset-0 z-[110] grid place-items-center bg-navy-900/60 px-4 py-6 backdrop-blur-sm transition-opacity duration-200 motion-reduce:transition-none ${
             isOpen ? "opacity-100" : "opacity-0"
@@ -126,10 +104,10 @@ export function PhoneModal({ className = "" }: PhoneModalProps) {
             <div className="flex items-start justify-between gap-4">
               <div>
                 <h2 id="phone-modal-title" className="text-2xl font-extrabold text-navy-900">
-                  Telefon orqali bog‘lanish
+                  Telefon orqali bog'lanish
                 </h2>
                 <p id="phone-modal-description" className="mt-2 text-sm leading-6 text-slate-700">
-                  O‘zingizga qulay raqamni tanlang
+                  O'zingizga qulay raqamni tanlang
                 </p>
               </div>
               <button
@@ -138,7 +116,7 @@ export function PhoneModal({ className = "" }: PhoneModalProps) {
                 className="flex h-10 w-10 shrink-0 items-center justify-center rounded-md border border-navy-100 bg-white text-xl leading-none text-navy-900 shadow-[0_8px_20px_rgba(10,35,66,0.06)] transition hover:border-electric-500 hover:bg-navy-50 hover:shadow-glow focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-navy-700"
                 aria-label="Modalni yopish"
               >
-                ×
+                x
               </button>
             </div>
 
@@ -166,15 +144,42 @@ export function PhoneModal({ className = "" }: PhoneModalProps) {
                   <span className="min-w-0">
                     <span className="block text-base font-extrabold text-navy-900">{phone.label}</span>
                     <span className="mt-1 block text-sm font-semibold text-slate-500">
-                      Qo‘ng‘iroq qilish
+                      Qo'ng'iroq qilish
                     </span>
                   </span>
                 </a>
               ))}
             </div>
           </div>
-        </div>
-      ) : null}
+        </div>,
+        document.body
+      )
+    : null;
+
+  return (
+    <>
+      <button
+        ref={triggerRef}
+        type="button"
+        onClick={openModal}
+        className={`pulse-phone inline-flex min-h-11 items-center justify-center gap-2 rounded-md border border-navy-200 bg-white px-4 py-3 text-sm font-bold text-navy-900 shadow-[0_8px_22px_rgba(10,35,66,0.06)] transition hover:border-electric-500 hover:bg-navy-50 hover:shadow-glow focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-navy-700 ${className}`}
+        aria-haspopup="dialog"
+      >
+        <svg
+          aria-hidden="true"
+          viewBox="0 0 24 24"
+          className="h-4 w-4"
+          fill="none"
+          stroke="currentColor"
+          strokeWidth="2"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        >
+          <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.12.91.33 1.8.63 2.65a2 2 0 0 1-.45 2.11L8 9.77a16 16 0 0 0 6.23 6.23l1.29-1.29a2 2 0 0 1 2.11-.45c.85.3 1.74.51 2.65.63A2 2 0 0 1 22 16.92z" />
+        </svg>
+        Qo'ng'iroq qilish
+      </button>
+      {modal}
     </>
   );
 }

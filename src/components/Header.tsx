@@ -1,7 +1,7 @@
-import { ButtonLink } from "@/components/ButtonLink";
+import { LeadFormModal } from "@/components/LeadFormModal";
 import { PhoneModal } from "@/components/PhoneModal";
 import { TelegramButton } from "@/components/TelegramButton";
-import { consultationHref, navItems } from "@/data/site";
+import { navItems } from "@/data/site";
 
 export function Header() {
   return (
@@ -28,9 +28,9 @@ export function Header() {
         </nav>
 
         <div className="hidden items-center gap-2 lg:flex">
-          <ButtonLink href={consultationHref} variant="secondary" className="h-10 min-h-0 px-4 py-0">
+          <LeadFormModal context="KONSULTATSIYA" variant="secondary" className="h-10 min-h-0 px-4 py-0">
             Konsultatsiya olish
-          </ButtonLink>
+          </LeadFormModal>
           <TelegramButton compact />
           <PhoneModal className="h-10 min-h-0 px-3 py-0" />
         </div>
@@ -52,9 +52,9 @@ export function Header() {
                 </a>
               ))}
             </nav>
-            <ButtonLink href={consultationHref} variant="secondary" className="mt-3 w-full">
+            <LeadFormModal context="KONSULTATSIYA" variant="secondary" className="mt-3 w-full">
               Konsultatsiya olish
-            </ButtonLink>
+            </LeadFormModal>
             <div className="mt-2 grid grid-cols-2 gap-2">
               <TelegramButton label="Telegram" />
               <PhoneModal className="w-full px-3" />

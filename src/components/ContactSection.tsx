@@ -1,9 +1,8 @@
-import { ButtonLink } from "@/components/ButtonLink";
+import { LeadFormModal } from "@/components/LeadFormModal";
 import { PhoneModal } from "@/components/PhoneModal";
 import { TelegramButton } from "@/components/TelegramButton";
 import {
   address,
-  consultationHref,
   googleMapsUrl,
   yandexMapsUrl
 } from "@/data/site";
@@ -24,9 +23,9 @@ export function ContactSection() {
             TAXPOINT mutaxassisi mos tarif yoki xizmatni tanlashga yordam beradi.
           </p>
           <div className="mt-8 flex flex-col gap-3 sm:flex-row">
-            <ButtonLink href={consultationHref} variant="secondary">
+            <LeadFormModal context="KONSULTATSIYA" variant="secondary">
               Konsultatsiya olish
-            </ButtonLink>
+            </LeadFormModal>
             <TelegramButton label="Telegram orqali yozish" />
           </div>
         </div>

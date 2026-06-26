@@ -1,3 +1,5 @@
+import { LeadFormModal } from "@/components/LeadFormModal";
+
 type ServiceCategoryProps = {
   title: string;
   services: string[];
@@ -15,6 +17,9 @@ export function ServiceCategory({ title, services }: ServiceCategoryProps) {
           </li>
         ))}
       </ul>
+      <LeadFormModal context={`XIZMAT: ${title}`} variant="outline" className="mt-6 w-full">
+        Maslahat olish
+      </LeadFormModal>
     </article>
   );
 }

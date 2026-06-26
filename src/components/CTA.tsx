@@ -1,7 +1,7 @@
 import { ButtonLink } from "@/components/ButtonLink";
+import { LeadFormModal } from "@/components/LeadFormModal";
 import { PhoneModal } from "@/components/PhoneModal";
 import { TelegramButton } from "@/components/TelegramButton";
-import { consultationHref } from "@/data/site";
 
 export function CTA() {
   return (
@@ -17,7 +17,7 @@ export function CTA() {
           </p>
         </div>
         <div className="flex w-full flex-col gap-3 sm:w-auto sm:flex-row">
-          <ButtonLink href={consultationHref}>Konsultatsiya olish</ButtonLink>
+          <LeadFormModal context="KONSULTATSIYA">Konsultatsiya olish</LeadFormModal>
           <ButtonLink href="#tariflar" variant="outline" className="border-white/30 bg-white text-navy-900 hover:bg-navy-50 hover:shadow-glow">
             Tariflarni ko‘rish
           </ButtonLink>

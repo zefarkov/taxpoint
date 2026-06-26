@@ -29,6 +29,17 @@ npm run build
 
 Next.js is configured with `output: "export"`, so the production files are written to `/out`.
 
+## Telegram lead forms
+
+All main CTA buttons open a short lead form and send the request to Telegram from the client side. Configure these environment variables before production builds:
+
+```bash
+NEXT_PUBLIC_TELEGRAM_BOT_TOKEN=your_bot_token
+NEXT_PUBLIC_TELEGRAM_CHAT_ID=your_chat_id
+```
+
+No bot token is hardcoded in the project. If these values are missing in production, the form shows a user-friendly error instead of sending.
+
 ## Deploy through GitHub Pages
 
 1. Push the repository to GitHub.

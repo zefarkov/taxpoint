@@ -1,10 +1,11 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { ButtonLink } from "@/components/ButtonLink";
+import { LeadFormModal } from "@/components/LeadFormModal";
 import { TelegramButton } from "@/components/TelegramButton";
 import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";
-import { consultationHref, seoServices } from "@/data/site";
+import { seoServices } from "@/data/site";
 
 type PageProps = {
   params: Promise<{ slug: string }>;
@@ -72,7 +73,7 @@ export default async function ServicePage({ params }: PageProps) {
               </ul>
             </div>
             <div className="mt-10 flex flex-col gap-3 sm:flex-row">
-              <ButtonLink href={consultationHref}>Konsultatsiya olish</ButtonLink>
+              <LeadFormModal context={`XIZMAT: ${service.title}`}>Konsultatsiya olish</LeadFormModal>
               <TelegramButton label="Telegram" />
               <ButtonLink href="/#tariflar" variant="outline">
                 Tariflarni ko‘rish

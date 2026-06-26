@@ -1,5 +1,4 @@
-import { ButtonLink } from "@/components/ButtonLink";
-import { consultationHref } from "@/data/site";
+import { LeadFormModal } from "@/components/LeadFormModal";
 
 type PricingCardProps = {
   plan: {
@@ -42,9 +41,13 @@ export function PricingCard({ plan }: PricingCardProps) {
           </li>
         ))}
       </ul>
-      <ButtonLink href={consultationHref} variant={plan.recommended ? "primary" : "outline"} className="mt-8 w-full">
+      <LeadFormModal
+        context={`TARIF: ${plan.name} — ${plan.price}`}
+        variant={plan.recommended ? "primary" : "outline"}
+        className="mt-8 w-full"
+      >
         Mutaxassis bilan gaplashish
-      </ButtonLink>
+      </LeadFormModal>
     </article>
   );
 }

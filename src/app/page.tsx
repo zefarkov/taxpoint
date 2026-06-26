@@ -4,13 +4,13 @@ import { ContactSection } from "@/components/ContactSection";
 import { FAQ } from "@/components/FAQ";
 import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";
+import { LeadFormModal } from "@/components/LeadFormModal";
 import { Hero } from "@/components/Hero";
 import { PricingCard } from "@/components/PricingCard";
 import { SectionHeading } from "@/components/SectionHeading";
 import { ServiceCategory } from "@/components/ServiceCategory";
 import { TrustMetrics } from "@/components/TrustMetrics";
-import { consultationHref, faqs, pricingPlans, serviceCategories } from "@/data/site";
-import { ButtonLink } from "@/components/ButtonLink";
+import { faqs, pricingPlans, serviceCategories } from "@/data/site";
 
 const problems = [
   "Hisobotlarni kech topshirish xavfi",
@@ -64,7 +64,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section id="tariflar" className="section-padding bg-white">
+        <section id="tariflar" className="section-padding bg-gradient-to-b from-[#F3F8FF] via-[#EEF5FD] to-white">
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <SectionHeading
               eyebrow="Tariflar"
@@ -123,9 +123,9 @@ export default function Home() {
               </article>
             </div>
             <div className="mt-10 text-center">
-              <ButtonLink href={consultationHref}>
+              <LeadFormModal context="XIZMAT: YATT va MCHJ ro'yxatdan o'tkazish">
                 Ro‘yxatdan o‘tkazish bo‘yicha maslahat olish
-              </ButtonLink>
+              </LeadFormModal>
             </div>
           </div>
         </section>

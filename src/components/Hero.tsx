@@ -1,7 +1,7 @@
 import { ButtonLink } from "@/components/ButtonLink";
+import { LeadFormModal } from "@/components/LeadFormModal";
 import { PhoneModal } from "@/components/PhoneModal";
 import { TelegramButton } from "@/components/TelegramButton";
-import { consultationHref } from "@/data/site";
 
 const trustPoints = [
   "Hisobotlar vaqtida topshiriladi",
@@ -25,9 +25,9 @@ export function Hero() {
             xizmatlarini taqdim etadi.
           </p>
           <div className="mt-8 flex flex-col gap-3 sm:flex-row">
-            <ButtonLink href={consultationHref} variant="secondary" className="sm:min-w-48">
+            <LeadFormModal context="KONSULTATSIYA" variant="secondary" className="sm:min-w-48">
               Konsultatsiya olish
-            </ButtonLink>
+            </LeadFormModal>
             <ButtonLink href="#tariflar" variant="outline" className="sm:min-w-44">
               Tariflarni ko‘rish
             </ButtonLink>
