@@ -63,7 +63,7 @@ export function Hero() {
           </div>
           <div className="mt-6 grid grid-cols-2 gap-3 border-t border-navy-100 pt-6">
             <div>
-              <p className="text-2xl font-extrabold text-navy-900">4</p>
+              <p className="text-2xl font-extrabold text-navy-900">4 xil</p>
               <p className="mt-1 text-xs font-medium text-slate-500">oylik tarif</p>
             </div>
             <div>
